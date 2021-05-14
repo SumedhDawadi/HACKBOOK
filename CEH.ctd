@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="CRYPTOGRAPHY ::" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620967664">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1620976169">
+    <rich_text>#Refer to TERMS AND TERMINOLOGY 
+--------------------------------------------------------------------------------------------------------------------------------------
+Course Outline
+Module 01: Introduction to Ethical Hacking
+Module 02: Footprinting and Reconnaissance
+Module 03: Scanning Networks
+Module 04: Enumeration
+Module 05: Vulnerability Analysis
+Module 06: System Hacking
+Module 07: Malware Threats
+Module 08: Sniffing
+Module 09: Social Engineering
+Module 10: Denial-of-Service
+Module 11: Session Hijacking
+Module 12: Evading IDS, Firewalls, and Honeypots
+Module 13: Hacking Web Servers
+Module 14: Hacking Web Applications
+Module 15: SQL Injection
+Module 16: Hacking Wireless Networks
+Module 17: Hacking Mobile Platforms
+Module 18: IoT Hacking
+Module 19: Cloud Computing
+Module 20: Cryptography
+===================================================================</rich_text>
+  </node>
+  <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
     <rich_text weight="heavy">Cryptography</rich_text>
     <rich_text justification="left" scale="h3"> is a method of protecting information and communications through the use of codes, so that only those for whom the information is intended can read and process it. The prefix "crypt-" means "hidden" or "vault" -- and the suffix "-graphy" stands for "writing."</rich_text>
@@ -16,7 +42,9 @@ OR:
   
 ⇒ Message is firstly converted into numerical form, numerical form is applied to the key called encryption key. Encryption key uses cypher text. Again, send over the network, reciever will decrypt the key to decode the message. 
 
- 
+ </rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
  
  #Hashing:: 
  Special technique where you can encrypt data but cant decrypt data. Encrypted data is called hashing. 
@@ -30,5 +58,35 @@ OR:
 • Decipher (decrypt) - recovering cipher text from plaintext• 
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
+  </node>
+  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1620976516">
+    <rich_text>1. Hack-value : Hack value is the notion used by hackers to express that something is worth doing or is interesting
+
+2. Zero-Day attack:  A zero day exploit is a cyber attack that occurs on the same day a weakness is discovered in software. At that point, it's exploited before a fix becomes available from its creator
+
+3. Vulnerablity : vulnerability is any weakness within an organization's information systems, internal controls, or system processes that can be exploited by cybercriminals
+
+4. Daisy Chaining : Daisy chaining - it involves gaining access to a network and /or computer and then using the same information to gain access to multiple networks and computers that contains desirable information.
+
+5. Exploit : </rich_text>
+    <rich_text foreground="#ffffffffffff">An exploit is a piece of software, a chunk of data, or a sequence of commands that takes advantage of a bug or vulnerability to cause unintended or unanticipated behavior to occur on computer software, hardware, or something electronic.</rich_text>
+    <rich_text>
+
+6. Doxing : Publish private or identifying information about (a particular individual) on the internet, typically with malicious intent
+
+7. Payload : A payload is a set of malicious codes that carry crucial information that can be used to hack any device beyond limits that you can't imagine.
+
+8. Bot : A bot, short for "robot", is a type of software application or script that performs automated tasks on command. Bad bots perform malicious tasks that allow an attacker to remotely take control over an affected computer. Once infected, these machines may also be referred to as zombies
+
+9. Backdoor : A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access (aka root access) on a computer system, network or software application.
+
+</rich_text>
+  </node>
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620975522">
+    <rich_text>KALI LINUX :: 
+ExploitDB    :: </rich_text>
+    <rich_text link="webs https://www.exploit-db.com/">https://www.exploit-db.com/</rich_text>
+    <rich_text>
+</rich_text>
   </node>
 </cherrytree>
