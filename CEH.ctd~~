@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1620976169">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1620976722">
     <rich_text>#Refer to TERMS AND TERMINOLOGY 
 --------------------------------------------------------------------------------------------------------------------------------------
 Course Outline
@@ -26,6 +26,48 @@ Module 18: IoT Hacking
 Module 19: Cloud Computing
 Module 20: Cryptography
 ===================================================================</rich_text>
+  </node>
+  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620978232">
+    <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
+Victims of DoS attacks often target web servers of high-profile organizations such as banking, commerce, and media companies, or government and trade organizations. Though DoS attacks do not typically result in the theft or loss of significant information or other assets, they can cost the victim a great deal of time and money to handle.
+There are two general methods of DoS attacks: flooding services or crashing services. Flood attacks occur when the system receives too much traffic for the server to buffer, causing them to slow down and eventually stop. Popular flood attacks include:
+• Buffer overflow attacks – the most common DoS attack. The concept is to send more traffic to a network address than the programmers have built the system to handle. It includes the attacks listed below, in addition to others that are designed to exploit bugs specific to certain applications or networks
+• ICMP flood – leverages misconfigured network devices by sending spoofed packets that ping every computer on the targeted network, instead of just one specific machine. The network is then triggered to amplify the traffic. This attack is also known as the smurf attack or ping of death.
+• SYN flood – sends a request to connect to a server, but never completes the handshake. Continues until all open ports are saturated with requests and none are available for legitimate users to connect to.
+
+Other DoS attacks simply exploit vulnerabilities that cause the target system or service to crash. In these attacks, input is sent that takes advantage of bugs in the target that subsequently crash or severely destabilize the system, so that it can’t be accessed or used.
+An additional type of DoS attack is the Distributed Denial of Service (DDoS) attack. A DDoS attack occurs when multiple systems orchestrate a synchronized DoS attack to a single target. The essential difference is that instead of being attacked from one location, the target is attacked from many locations at once. The distribution of hosts that defines a DDoS provide the attacker multiple advantages:
+◇ He can leverage the greater volume of machine to execute a seriously disruptive attack
+◇ The location of the attack is difficult to detect due to the random distribution of attacking systems (often worldwide)
+◇ It is more difficult to shut down multiple machines than one
+◇ The true attacking party is very difficult to identify, as they are disguised behind many (mostly compromised) systems
+
+Modern security technologies have developed mechanisms to defend against most forms of DoS attacks, but due to the unique characteristics of DDoS, it is still regarded as an elevated threat and is of higher concern to organizations that fear being targeted by such an attack.</rich_text>
+    <rich_text>
+
+
+#Difference between DOS &amp; DDOS : 
+</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e" weight="heavy">1. </rich_text>
+    <rich_text justification="left" link="webs https://www.geeksforgeeks.org/deniel-service-prevention/" scale="h3" foreground="#40424e" weight="heavy">DOS Attack</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e" weight="heavy"> :</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e">
+</rich_text>
+    <rich_text foreground="#e6e6e6e6fafa">A DOS attack is a denial of service attack, in this attack a computer sends massive amount of traffic to a victims computer and shuts it down.Dos attack is a online attack which is used to make the website unavailable for its users when done on a website. This attack make the server of a website down which is connected to internet by sending a large number of traffic to it.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e" weight="heavy">2. </rich_text>
+    <rich_text justification="left" link="webs https://www.geeksforgeeks.org/denial-of-service-ddos-attack/" scale="h3" foreground="#40424e" weight="heavy">DDOS Attack</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e" weight="heavy"> :</rich_text>
+    <rich_text justification="left" scale="h3" foreground="#40424e">
+</rich_text>
+    <rich_text foreground="#e6e6e6e6fafa">In ddos attack means distributed denial of service in this attack dos attacks are done from many different locations using many systems.</rich_text>
+    <rich_text>
+
+
+
+
+</rich_text>
   </node>
   <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
@@ -59,7 +101,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1620976443">
+  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1620976591">
     <rich_text>1. Hack-value : Hack value is the notion used by hackers to express that something is worth doing or is interesting
 
 2. Zero-Day attack:  A zero day exploit is a cyber attack that occurs on the same day a weakness is discovered in software. At that point, it's exploited before a fix becomes available from its creator
@@ -74,23 +116,34 @@ OR:
 
 6. Doxing : Publish private or identifying information about (a particular individual) on the internet, typically with malicious intent
 
-7. Payload : </rich_text>
-    <rich_text justification="left" scale="h3">A </rich_text>
-    <rich_text weight="heavy">payload</rich_text>
-    <rich_text justification="left" scale="h3"> is a set of malicious codes that carry crucial information that can be used to </rich_text>
-    <rich_text weight="heavy">hack</rich_text>
-    <rich_text justification="left" scale="h3"> any device beyond limits that you can't imagine.</rich_text>
-    <rich_text>
+7. Payload : A payload is a set of malicious codes that carry crucial information that can be used to hack any device beyond limits that you can't imagine.
 
-8. Bot : 
+8. Bot : A bot, short for "robot", is a type of software application or script that performs automated tasks on command. Bad bots perform malicious tasks that allow an attacker to remotely take control over an affected computer. Once infected, these machines may also be referred to as zombies
 
-9. Backdoor : </rich_text>
+9. Backdoor : A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access (aka root access) on a computer system, network or software application.
+
+</rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620975522">
-    <rich_text>KALI LINUX :: 
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620978547">
+    <rich_text>KALI LINUX :: </rich_text>
+    <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
+    <rich_text>
 ExploitDB    :: </rich_text>
     <rich_text link="webs https://www.exploit-db.com/">https://www.exploit-db.com/</rich_text>
+    <rich_text> 
+-------------------------------------------------------------------------------------------------------------------------------------
+#DOS &amp; DDOS:: 
+LOIC          :: </rich_text>
+    <rich_text link="webs https://sourceforge.net/projects/loic/">https://sourceforge.net/projects/loic/</rich_text>
     <rich_text>
+HOIC          :: </rich_text>
+    <rich_text link="webs https://www.imperva.com/learn/ddos/high-orbit-ion-cannon/">https://www.imperva.com/learn/ddos/high-orbit-ion-cannon/</rich_text>
+    <rich_text> 
+Xerxes        :: </rich_text>
+    <rich_text link="webs https://github.com/sepehrdaddev/Xerxes.git">https://github.com/sepehrdaddev/Xerxes.git</rich_text>
+    <rich_text>    
+Ufornet      : 
+===================================================================
 </rich_text>
   </node>
 </cherrytree>
