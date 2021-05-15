@@ -124,7 +124,7 @@ OR:
 
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620978547">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620978586">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -142,7 +142,9 @@ HOIC          :: </rich_text>
 Xerxes        :: </rich_text>
     <rich_text link="webs https://github.com/sepehrdaddev/Xerxes.git">https://github.com/sepehrdaddev/Xerxes.git</rich_text>
     <rich_text>    
-Ufornet      : 
+Ufornet       :: </rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/ufonet.git">https://github.com/SumedhDawadi/ufonet.git</rich_text>
+    <rich_text>
 ===================================================================
 </rich_text>
   </node>
