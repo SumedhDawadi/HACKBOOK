@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1620976722">
-    <rich_text>#Refer to TERMS AND TERMINOLOGY 
---------------------------------------------------------------------------------------------------------------------------------------
-Course Outline
+  <node name="Course Outline:: EC-Council" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621153066" ts_lastsave="1621153068">
+    <rich_text>Course Outline
 Module 01: Introduction to Ethical Hacking
 Module 02: Footprinting and Reconnaissance
 Module 03: Scanning Networks
@@ -27,7 +25,45 @@ Module 19: Cloud Computing
 Module 20: Cryptography
 ===================================================================</rich_text>
   </node>
-  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620978232">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621154086">
+    <rich_text background="#ffff00000000">#Refer to TERMS AND TERMINOLOGY </rich_text>
+    <rich_text>
+--------------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+    <rich_text background="#ffff00000000">#Types of hackers :</rich_text>
+    <rich_text> 
+1. Black-hat : The person who hacks to damage a person  or company. 
+2. White-hat: The person who hacks to find vulnerablity and report to the owner.
+3. Grey-hat : The person who is involve in crime as well hacks for good intention. 
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Hacktavist </rich_text>
+    <rich_text>: The person who hacks and leave message, what did he/she hack and objective of hacking.
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Cyber-Crime and its type :</rich_text>
+    <rich_text>
+ ---------------------------------
+1. Computer Fraud : 
+2. Privacy Voilation : 
+3. Identity theft      : 
+4. Sharing copyrighted files / information : 
+5. Electronic Money Laundering : Converting Black-money into white  
+6. ATM fraud : Cloning ATM card.
+7. MITM attack : Hackers performs attack between senders and receiver.  
+8. Spam : 
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Rules for Ethical-Hackers :</rich_text>
+    <rich_text> 
+----------------------------------
+1. Alaways ask for written permission from the owner before Pentesing or while VAPT.
+2. Maintain privacy of the organization. 
+3. Transparently create report so that owner fix the vulnerablity o 
+
+</rich_text>
+  </node>
+  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620979020">
     <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
 Victims of DoS attacks often target web servers of high-profile organizations such as banking, commerce, and media companies, or government and trade organizations. Though DoS attacks do not typically result in the theft or loss of significant information or other assets, they can cost the victim a great deal of time and money to handle.
 There are two general methods of DoS attacks: flooding services or crashing services. Flood attacks occur when the system receives too much traffic for the server to buffer, causing them to slow down and eventually stop. Popular flood attacks include:
@@ -124,7 +160,7 @@ OR:
 
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1620978586">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621152744">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -146,6 +182,8 @@ Ufornet       :: </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/ufonet.git">https://github.com/SumedhDawadi/ufonet.git</rich_text>
     <rich_text>
 ===================================================================
-</rich_text>
+#</rich_text>
+    <rich_text link="webs https://thehackernews.com/">https://thehackernews.com/</rich_text>
+    <rich_text> </rich_text>
   </node>
 </cherrytree>
