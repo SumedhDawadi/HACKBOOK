@@ -25,7 +25,7 @@ Module 19: Cloud Computing
 Module 20: Cryptography
 ===================================================================</rich_text>
   </node>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621158369">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621159298">
     <rich_text background="#ffff00000000">#Refer to TERMS AND TERMINOLOGY </rich_text>
     <rich_text>
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -90,6 +90,76 @@ Module 20: Cryptography
 ===================================================================
 
 </rich_text>
+  </node>
+  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1621161428">
+    <rich_text weight="heavy">System hacking</rich_text>
+    <rich_text justification="left" scale="h3"> is the way </rich_text>
+    <rich_text weight="heavy">hackers</rich_text>
+    <rich_text justification="left" scale="h3"> get access to individual computers on a network. </rich_text>
+    <rich_text weight="heavy">Ethical hackers</rich_text>
+    <rich_text justification="left" scale="h3"> learn </rich_text>
+    <rich_text weight="heavy">system hacking</rich_text>
+    <rich_text justification="left" scale="h3"> to detect, prevent, and counter these types of attacks.</rich_text>
+    <rich_text>
+===================================================================
+</rich_text>
+    <rich_text weight="heavy">Five Phases of Ethical Hacking</rich_text>
+    <rich_text>
+• Phase 1: Reconnaissance.
+• Phase 2: Scanning.
+• Phase 3: Gaining Access.
+• Phase 4: Maintaining Access.
+• Phase </rich_text>
+    <rich_text weight="heavy">5</rich_text>
+    <rich_text>: Clearing Tracks.
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">Change password :</rich_text>
+    <rich_text> This PC → Manage → Local users → User → Right-click → change the password. 
+===================================================================
+</rich_text>
+    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621163257">
+      <rich_text>#This is similar to VAPT  
+#Use Linux. 
+===================================================================
+1. </rich_text>
+      <rich_text background="#ffff00000000">Find the active system in the network :</rich_text>
+      <rich_text> 
+arp-scan --local
+--------------------------------------------------
+2. </rich_text>
+      <rich_text background="#ffff00000000">Host-discovery :</rich_text>
+      <rich_text> This will give you info about name of the PC and type of the server connected with network.
+nbtscan -r *IP address of the series* (example: nbtscan -r 192.168.222.1/24) :: 222 is the host 1 is initial IP.
+---------------------------------------------------
+3. </rich_text>
+      <rich_text background="#ffff00000000">Scanning the particular IP that you want to penetrate :</rich_text>
+      <rich_text> 
+nmap -sS -sV -A -T4- *IP address of the PC or Device*
+---------------------------------------------------
+4. </rich_text>
+      <rich_text background="#ffff00000000">Find out the version name and google it to find out the payload. (exploitDB, seachsploit)</rich_text>
+      <rich_text>
+vsftpd 2.3.4 
+----------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">5. Open Metasploit </rich_text>
+      <rich_text>
+
+→ msfconsole
+→ search vsftpd 2.3.4 
+→ use *paste the exploit*
+→ show options (fill the necessary information that ask you as yes)
+→ set RHOST *Paste the IP address* </rich_text>
+      <rich_text background="#ffff00000000">#To set any command in option use set</rich_text>
+      <rich_text>
+→ exploit
+
+#This is how can hack into network.
+===================================================================
+
+</rich_text>
+    </node>
   </node>
   <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620979020">
     <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
@@ -165,7 +235,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1620976591">
+  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1621163465">
     <rich_text>1. Hack-value : Hack value is the notion used by hackers to express that something is worth doing or is interesting
 
 2. Zero-Day attack:  A zero day exploit is a cyber attack that occurs on the same day a weakness is discovered in software. At that point, it's exploited before a fix becomes available from its creator
@@ -186,6 +256,11 @@ OR:
 
 9. Backdoor : A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access (aka root access) on a computer system, network or software application.
 
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Start a python server :</rich_text>
+    <rich_text> python3 -m SimpleHTTPServer 4444
+===================================================================
 </rich_text>
   </node>
   <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621158402">
