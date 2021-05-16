@@ -25,7 +25,7 @@ Module 19: Cloud Computing
 Module 20: Cryptography
 ===================================================================</rich_text>
   </node>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621154158">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621158369">
     <rich_text background="#ffff00000000">#Refer to TERMS AND TERMINOLOGY </rich_text>
     <rich_text>
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -61,7 +61,33 @@ Module 20: Cryptography
 2. Maintain privacy of the organization. 
 3. Transparently create report so that owner fix the vulnerablity of bugs. 
 ===================================================================
-  
+</rich_text>
+    <rich_text background="#ffff00000000">#Type of inforamtion YOU need to look for :</rich_text>
+    <rich_text> 
+1. Confidential information : password, credit-card info and other informations.
+2. Health information : Health condition and health policies. 
+3. Personal information : Such as Address, family information , car or bike info and DOB etc.
+===================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Why do people hack?</rich_text>
+    <rich_text>
+1. Money.
+2. Fame.
+3. Power.
+4. Revenge
+5. Fun 
+6. Political cause. 
+===================================================================
+#Cyber-laws in Nepal : 
+</rich_text>
+    <rich_text link="webs https://nta.gov.np/wp-content/uploads/2018/05/2017_ITU_Nepal_Draft_Structure_Cybercrime.pdf">https://nta.gov.np/wp-content/uploads/2018/05/2017_ITU_Nepal_Draft_Structure_Cybercrime.pdf</rich_text>
+    <rich_text>
+===================================================================
+#Understanding networking is must to understand hacking so : 
+</rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
+    <rich_text> 
+===================================================================
 
 </rich_text>
   </node>
@@ -162,7 +188,7 @@ OR:
 
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621152744">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621158402">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -186,6 +212,11 @@ Ufornet       :: </rich_text>
 ===================================================================
 #</rich_text>
     <rich_text link="webs https://thehackernews.com/">https://thehackernews.com/</rich_text>
-    <rich_text> </rich_text>
+    <rich_text> 
+# </rich_text>
+    <rich_text link="webs https://nta.gov.np/wp-content/uploads/2018/05/2017_ITU_Nepal_Draft_Structure_Cybercrime.pdf">https://nta.gov.np/wp-content/uploads/2018/05/2017_ITU_Nepal_Draft_Structure_Cybercrime.pdf</rich_text>
+    <rich_text>
+# </rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
   </node>
 </cherrytree>
