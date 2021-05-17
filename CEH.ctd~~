@@ -91,7 +91,7 @@ Module 20: Cryptography
 
 </rich_text>
   </node>
-  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1621161428">
+  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1621238604">
     <rich_text weight="heavy">System hacking</rich_text>
     <rich_text justification="left" scale="h3"> is the way </rich_text>
     <rich_text weight="heavy">hackers</rich_text>
@@ -160,6 +160,32 @@ vsftpd 2.3.4
 
 </rich_text>
     </node>
+  </node>
+  <node name="Module 09: Social Engineering" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621238604" ts_lastsave="1621239017">
+    <rich_text>1. Social engineering is a technique used by criminals and cyber-crooks to trick users into revealing confidential information. The data obtained is then used to gain access to systems and carry out actions to the detriment of the person or organization whose data has been revealed.
+
+2. Hacking of Human-brain by psychological manipulation
+3. Collecting every information about of the victime such as what is likes, what he eats, listen, what does he do and so on. 
+4. With such information, hackers creates the dictionary file. 
+5. </rich_text>
+    <rich_text weight="heavy">Let's explore the six common types of social engineering attacks:</rich_text>
+    <rich_text>
+• Phishing. ...
+• Vishing and Smishing. ...
+• Pretexting. ...
+• Baiting. ...
+• Tailgating and Piggybacking. ...
+• Quid Pro Quo. ...
+• Cyber Threats Beyond </rich_text>
+    <rich_text weight="heavy">Social Engineering</rich_text>
+    <rich_text>.
+===================================================================
+Visit :: </rich_text>
+    <rich_text link="webs https://www.imperva.com/learn/application-security/social-engineering-attack/">https://www.imperva.com/learn/application-security/social-engineering-attack/</rich_text>
+    <rich_text> for more info.
+
+
+</rich_text>
   </node>
   <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620979020">
     <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
@@ -235,7 +261,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1621163439">
+  <node name="TERMS AND TERMINOLOGY" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975225" ts_lastsave="1621163465">
     <rich_text>1. Hack-value : Hack value is the notion used by hackers to express that something is worth doing or is interesting
 
 2. Zero-Day attack:  A zero day exploit is a cyber attack that occurs on the same day a weakness is discovered in software. At that point, it's exploited before a fix becomes available from its creator
@@ -257,9 +283,13 @@ OR:
 9. Backdoor : A backdoor refers to any method by which authorized and unauthorized users are able to get around normal security measures and gain high level user access (aka root access) on a computer system, network or software application.
 
 ===================================================================
-#Start a python server : python3 -m SimpleHTTPServer</rich_text>
+</rich_text>
+    <rich_text background="#ffff00000000">#Start a python server :</rich_text>
+    <rich_text> python3 -m SimpleHTTPServer 4444
+===================================================================
+</rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621158402">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621239028">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -289,5 +319,8 @@ Ufornet       :: </rich_text>
     <rich_text>
 # </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
+    <rich_text> 
+#</rich_text>
+    <rich_text link="webs https://www.imperva.com/learn/application-security/social-engineering-attack/">https://www.imperva.com/learn/application-security/social-engineering-attack/</rich_text>
   </node>
 </cherrytree>
