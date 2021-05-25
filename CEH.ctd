@@ -252,7 +252,7 @@ Modern security technologies have developed mechanisms to defend against most fo
 
 </rich_text>
   </node>
-  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621930585">
+  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621940388">
     <rich_text>1. An Intrusion Detection System (IDS) is a device or software application that monitors network and/or system activities for malicious activities or policy violations and produces reports to a Management Station.
 2. </rich_text>
     <rich_text scale="h3" foreground="#54565a"> </rich_text>
@@ -313,6 +313,7 @@ Simple firewall :: </rich_text>
     <rich_text>
 ===========================================================================</rich_text>
   </node>
+  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1621940388"/>
   <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
     <rich_text weight="heavy">Cryptography</rich_text>

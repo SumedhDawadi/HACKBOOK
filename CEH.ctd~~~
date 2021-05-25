@@ -252,7 +252,7 @@ Modern security technologies have developed mechanisms to defend against most fo
 
 </rich_text>
   </node>
-  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621930490">
+  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621930549">
     <rich_text>1. An Intrusion Detection System (IDS) is a device or software application that monitors network and/or system activities for malicious activities or policy violations and produces reports to a Management Station.
 2. </rich_text>
     <rich_text scale="h3" foreground="#54565a"> </rich_text>
@@ -298,7 +298,7 @@ d)Reputation-based IDS/IPS ::  It is based on server type.
 → Single device is use here to filter the network. 
 → It checks particular Files 
 → Logs file Analysis
-→ Connection 
+→ Connection Analysis
 =========================================================================
 
 ===========================================================================
