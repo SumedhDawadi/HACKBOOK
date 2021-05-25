@@ -25,7 +25,7 @@ Module 19: Cloud Computing
 Module 20: Cryptography
 ===================================================================</rich_text>
   </node>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621159298">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621588297">
     <rich_text background="#ffff00000000">#Refer to TERMS AND TERMINOLOGY </rich_text>
     <rich_text>
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -88,6 +88,27 @@ Module 20: Cryptography
     <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
     <rich_text> 
 ===================================================================
+
+</rich_text>
+  </node>
+  <node name="Module 03: Scanning Networks" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621588297" ts_lastsave="1621589803">
+    <rich_text>#This is related with information gathering. 
+#More information more hacks can more performed. 
+#Social networks, phone number etc are best to gather information of the victims. (Facebook, twitter,github)
+#Targating particuar person :: Facebook, linkedin are the best.
+#Fake survey could be the best method to collect information about user.
+===================================================================
+Hunting IP address or url shortner ::  </rich_text>
+    <rich_text link="webs https://grabify.link/">https://grabify.link/</rich_text>
+    <rich_text> 
+Temp sms : </rich_text>
+    <rich_text link="webs https://temp-sms.org/">https://temp-sms.org/</rich_text>
+    <rich_text> 
+People finder :: </rich_text>
+    <rich_text link="webs https://www.whitepages.com/">https://www.whitepages.com/</rich_text>
+    <rich_text>
+===================================================================
+
 
 </rich_text>
   </node>
@@ -161,7 +182,7 @@ vsftpd 2.3.4
 </rich_text>
     </node>
   </node>
-  <node name="Module 09: Social Engineering" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621238604" ts_lastsave="1621239017">
+  <node name="Module 09: Social Engineering" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621238604" ts_lastsave="1621239532">
     <rich_text>1. Social engineering is a technique used by criminals and cyber-crooks to trick users into revealing confidential information. The data obtained is then used to gain access to systems and carry out actions to the detriment of the person or organization whose data has been revealed.
 
 2. Hacking of Human-brain by psychological manipulation
@@ -183,11 +204,13 @@ vsftpd 2.3.4
 Visit :: </rich_text>
     <rich_text link="webs https://www.imperva.com/learn/application-security/social-engineering-attack/">https://www.imperva.com/learn/application-security/social-engineering-attack/</rich_text>
     <rich_text> for more info.
+===================================================================
+
 
 
 </rich_text>
   </node>
-  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1620979020">
+  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1621926393">
     <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
 Victims of DoS attacks often target web servers of high-profile organizations such as banking, commerce, and media companies, or government and trade organizations. Though DoS attacks do not typically result in the theft or loss of significant information or other assets, they can cost the victim a great deal of time and money to handle.
 There are two general methods of DoS attacks: flooding services or crashing services. Flood attacks occur when the system receives too much traffic for the server to buffer, causing them to slow down and eventually stop. Popular flood attacks include:
@@ -228,6 +251,61 @@ Modern security technologies have developed mechanisms to defend against most fo
 
 
 </rich_text>
+  </node>
+  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621930490">
+    <rich_text>1. An Intrusion Detection System (IDS) is a device or software application that monitors network and/or system activities for malicious activities or policy violations and produces reports to a Management Station.
+2. </rich_text>
+    <rich_text scale="h3" foreground="#54565a"> </rich_text>
+    <rich_text>Firewall monitors incoming and outgoing connections, for various rules and patterns, and filters the connections passing through them.
+3. HoneyPot : It's a sacrificial computer system that's intended to attract cyberattacks, like a decoy. It mimics a target for hackers, and uses their intrusion attempts to gain information about cybercriminals and the way they are operating or to distract them from other targets.
+4. IPS : An intrusion prevention system (IPS) is a form of network security that works to detect and prevent identified threats
+===========================================================================
+5.IDS, Firewalls and Honeypot are used in Network layer.
+6.It focus on Network security.
+===========================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">7. How does IDS works ?</rich_text>
+    <rich_text> 
+  If we download anythings from internet it will file will act as the packet, if the IDS finds anything suspicious,arbiry file or Malware it awares the user or network admin. 
+===========================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">8. How does IPS works ? </rich_text>
+    <rich_text>
+If IDS detects Malware or suspicious file, IPS will drop the packet and dont let it run to the system untill and unless user forces it to run.
+===========================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">9. Lets find the difference between IPS and IDS: </rich_text>
+    <rich_text>
+The main difference between them is that IDS is a monitoring system, while IPS is a control system. IDS doesn't alter the network packets in any way, whereas IPS prevents the packet from delivery based on the contents of the packet, much like how a firewall prevents traffic by IP address
+===========================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">10. How does IDS detects the Malware or Arbatiry file :</rich_text>
+    <rich_text> 
+a) Signature-based IDS/IPS :: Looks for specific strings or behaviour in the single packet present in the Malware
+
+b) Policy-based IDS/IPS :: Based on Same Origin Policy (SOP) meaing same environment.
+
+c) Anomaly IDS/IPS :: step in data mining that identifies data points, events, and/or observations that deviate from a dataset's normal behavior. Anomalous data can indicate critical incidents, such as a technical glitch, or potential opportunities, for instance a change in consumer behavior. Example : In a 30 sec 150 packet flow and all of the sudden size of the packet increase to 300 then Anomaly IDS/IPS block the packet and alerts
+
+d)Reputation-based IDS/IPS ::  It is based on server type. 
+===========================================================================
+</rich_text>
+    <rich_text background="#ffff00000000" foreground="#e6e6e6e6fafa">#Intrusion Detection System  are of two types :</rich_text>
+    <rich_text foreground="#e6e6e6e6fafa"> </rich_text>
+    <rich_text>
+1. Network-based
+2. Host-based : 
+→ Single device is use here to filter the network. 
+→ It checks particular Files 
+→ Logs file Analysis
+→ Connection 
+=========================================================================
+
+===========================================================================
+Simple firewall :: </rich_text>
+    <rich_text link="webs https://www.untangle.com/untangle-ng-firewall/free-trial/">https://www.untangle.com/untangle-ng-firewall/free-trial/</rich_text>
+    <rich_text>
+===========================================================================</rich_text>
   </node>
   <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
@@ -289,7 +367,7 @@ OR:
 ===================================================================
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621158402">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621929709">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -310,7 +388,7 @@ Xerxes        :: </rich_text>
 Ufornet       :: </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/ufonet.git">https://github.com/SumedhDawadi/ufonet.git</rich_text>
     <rich_text>
-===================================================================
+===========================================================================
 #</rich_text>
     <rich_text link="webs https://thehackernews.com/">https://thehackernews.com/</rich_text>
     <rich_text> 
@@ -319,5 +397,14 @@ Ufornet       :: </rich_text>
     <rich_text>
 # </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
+    <rich_text> 
+#</rich_text>
+    <rich_text link="webs https://www.imperva.com/learn/application-security/social-engineering-attack/">https://www.imperva.com/learn/application-security/social-engineering-attack/</rich_text>
+    <rich_text>
+===========================================================================
+Firewall :: </rich_text>
+    <rich_text link="webs https://www.untangle.com/untangle-ng-firewall/free-trial/">https://www.untangle.com/untangle-ng-firewall/free-trial/</rich_text>
+    <rich_text>
+===========================================================================</rich_text>
   </node>
 </cherrytree>
