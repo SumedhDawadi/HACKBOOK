@@ -139,7 +139,7 @@ People finder :: </rich_text>
     <rich_text> This PC → Manage → Local users → User → Right-click → change the password. 
 ===================================================================
 </rich_text>
-    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621163257">
+    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621940989">
       <rich_text>#This is similar to VAPT  
 #Use Linux. 
 ===================================================================
@@ -177,7 +177,7 @@ vsftpd 2.3.4
 → exploit
 
 #This is how can hack into network.
-===================================================================
+==============================================================
 
 </rich_text>
     </node>
