@@ -139,7 +139,7 @@ People finder :: </rich_text>
     <rich_text> This PC → Manage → Local users → User → Right-click → change the password. 
 ===================================================================
 </rich_text>
-    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621163257">
+    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621940989">
       <rich_text>#This is similar to VAPT  
 #Use Linux. 
 ===================================================================
@@ -177,7 +177,7 @@ vsftpd 2.3.4
 → exploit
 
 #This is how can hack into network.
-===================================================================
+==============================================================
 
 </rich_text>
     </node>
@@ -210,7 +210,7 @@ Visit :: </rich_text>
 
 </rich_text>
   </node>
-  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1621926393">
+  <node name="Module 10: Denial-of-Service (DOS)" unique_id="6" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620976722" ts_lastsave="1621943012">
     <rich_text foreground="#e6e6e6e6fafa">A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
 Victims of DoS attacks often target web servers of high-profile organizations such as banking, commerce, and media companies, or government and trade organizations. Though DoS attacks do not typically result in the theft or loss of significant information or other assets, they can cost the victim a great deal of time and money to handle.
 There are two general methods of DoS attacks: flooding services or crashing services. Flood attacks occur when the system receives too much traffic for the server to buffer, causing them to slow down and eventually stop. Popular flood attacks include:
@@ -252,7 +252,28 @@ Modern security technologies have developed mechanisms to defend against most fo
 
 </rich_text>
   </node>
-  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621930557">
+  <node name="Module 11: Session Hijacking" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621943012" ts_lastsave="1621944543">
+    <rich_text>“Session” is the term used to refer to a visitor's time browsing a web site. It's meant to represent the time between a visitor's first arrival at a page on the site and the time they stop using the site.
+==============================================================
+Session hijacking is an attack where a user session is taken over by an attacker. A session starts when you log into a service, for example your banking application, and ends when you log out. ... The server is then fooled into treating the attacker's connection as the original user's valid session via cookie
+==============================================================
+</rich_text>
+    <rich_text weight="heavy">cookies</rich_text>
+    <rich_text> means the set of session and other inforamtion such as username or password. 
+==============================================================
+</rich_text>
+    <rich_text background="#ffff00000000">Pratical ::</rich_text>
+    <rich_text> 
+- You need cookie editor from web-store: 
+- After installing we need to copy all the cookie from cookie editor (export)
+- Logout and delete all the cookie from editor and export and paste the cookie.
+- Refresh the page. 
+- If you are login thats session hijacking vulnerablity. 
+- You can still perform this but the user logouts from his account you are automatically logout.
+==============================================================
+</rich_text>
+  </node>
+  <node name="Module 12: Evading IDS, Firewalls, and Honeypots" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621926393" ts_lastsave="1621941063">
     <rich_text>1. An Intrusion Detection System (IDS) is a device or software application that monitors network and/or system activities for malicious activities or policy violations and produces reports to a Management Station.
 2. </rich_text>
     <rich_text scale="h3" foreground="#54565a"> </rich_text>
@@ -277,7 +298,7 @@ If IDS detects Malware or suspicious file, IPS will drop the packet and dont let
     <rich_text background="#ffff00000000">9. Lets find the difference between IPS and IDS: </rich_text>
     <rich_text>
 The main difference between them is that IDS is a monitoring system, while IPS is a control system. IDS doesn't alter the network packets in any way, whereas IPS prevents the packet from delivery based on the contents of the packet, much like how a firewall prevents traffic by IP address
-===========================================================================
+==============================================================
 </rich_text>
     <rich_text background="#ffff00000000">10. How does IDS detects the Malware or Arbatiry file :</rich_text>
     <rich_text> 
@@ -293,8 +314,13 @@ d)Reputation-based IDS/IPS ::  It is based on server type.
     <rich_text background="#ffff00000000" foreground="#e6e6e6e6fafa">#Intrusion Detection System  are of two types :</rich_text>
     <rich_text foreground="#e6e6e6e6fafa"> </rich_text>
     <rich_text>
-1. Network-based
-2. Host-based : 
+</rich_text>
+    <rich_text background="#ffff00000000">1. Network-based</rich_text>
+    <rich_text> :
+
+2. </rich_text>
+    <rich_text background="#ffff00000000">Host-based : </rich_text>
+    <rich_text>
 → Single device is use here to filter the network. 
 → It checks particular Files 
 → Logs file Analysis
@@ -308,6 +334,7 @@ Simple firewall :: </rich_text>
     <rich_text>
 ===========================================================================</rich_text>
   </node>
+  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1621940388"/>
   <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
     <rich_text weight="heavy">Cryptography</rich_text>
@@ -368,7 +395,7 @@ OR:
 ===================================================================
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621929709">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1621941520">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -407,5 +434,10 @@ Firewall :: </rich_text>
     <rich_text link="webs https://www.untangle.com/untangle-ng-firewall/free-trial/">https://www.untangle.com/untangle-ng-firewall/free-trial/</rich_text>
     <rich_text>
 ===========================================================================</rich_text>
+  </node>
+  <node name="OWASP Top 10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1621941540">
+    <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
+    <rich_text>
+</rich_text>
   </node>
 </cherrytree>
