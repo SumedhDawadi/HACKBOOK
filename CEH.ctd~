@@ -252,7 +252,7 @@ Modern security technologies have developed mechanisms to defend against most fo
 
 </rich_text>
   </node>
-  <node name="Module 11: Session Hijacking" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621943012" ts_lastsave="1621944643">
+  <node name="Module 11: Session Hijacking" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621943012" ts_lastsave="1621944685">
     <rich_text>“Session” is the term used to refer to a visitor's time browsing a web site. It's meant to represent the time between a visitor's first arrival at a page on the site and the time they stop using the site.
 ==============================================================
 Session hijacking is an attack where a user session is taken over by an attacker. A session starts when you log into a service, for example your banking application, and ends when you log out. ... The server is then fooled into treating the attacker's connection as the original user's valid session via cookie
@@ -269,7 +269,7 @@ Session hijacking is an attack where a user session is taken over by an attac
 - Logout and delete all the cookie from editor and export and paste the cookie.
 - copy the imported cookie in a text and </rich_text>
     <rich_text background="#ffff00000000">edit session with true.</rich_text>
-    <rich_text> → “Session” : true
+    <rich_text> → “Session” : true (optional)
 - Refresh the page. 
 - If you are login thats session hijacking vulnerablity. 
 - You can still perform this but the user logouts from his account you are automatically logout.
@@ -438,9 +438,78 @@ Firewall :: </rich_text>
     <rich_text>
 ===========================================================================</rich_text>
   </node>
-  <node name="OWASP Top 10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1621941540">
+  <node name="OWASP Top 10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622094841">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
+==============================================================
+1. </rich_text>
+    <rich_text link="webs https://snyk.io/learn/sql-injection/">Injection</rich_text>
+    <rich_text>
+2. Broken authentication
+3. Sensitive data exposure
+4. XML external entities (XXE)
+5. Broken access control
+6. Security misconfigurations
+7. </rich_text>
+    <rich_text link="webs https://snyk.io/learn/cross-site-scripting/">Cross-site scripting (XSS)</rich_text>
+    <rich_text>
+8. Insecure deserialization
+9. Using components with known vulnerabilities
+10. Insufficient logging and monitoring
+==============================================================</rich_text>
+    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622100466">
+      <rich_text># Cross site script is the process of injecting javascript of the server-side to gain control over the server. 
+#Always look at the source code after you inject the code. Sometimes it might reflect you back but will be stored in the code. 
+==============================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#Types of JavaScript:</rich_text>
+      <rich_text> 
+1. Reflected javascript
+2. DOM javascript
+3. Stored javascript
+==============================================================
+1. </rich_text>
+      <rich_text background="#ffff00000000">Reflected XSS:</rich_text>
+      <rich_text> If a attacker injects the javascript code on URL parameter of input section it reflects back as alert.  payload : &lt;script&gt;alert("Reflected")&lt;/script&gt;
+
+2. </rich_text>
+      <rich_text background="#ffff00000000">Stored XSS :</rich_text>
+      <rich_text> Stored XSS attack, a perpetrator has to locate a vulnerability in a web application and then inject malicious script into its server (e.g., via a comment field, Suggestion field).
+
+3.  </rich_text>
+      <rich_text background="#ffff00000000">DOM XSS:</rich_text>
+      <rich_text> DOM XSS stands for Document Object Model-based Cross-site Scripting. A DOM-based XSS attack is possible if the web application writes data to the Document Object Model without proper sanitization. </rich_text>
+    </node>
+  </node>
+  <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622007952">
+    <rich_text background="#ffff00000000">hydra:</rich_text>
+    <rich_text>
+-L : wordlist 
+-l : username (known)
+-P : wordlist 
+-p : password (known)
+Remember : 
+1. IP-address or Name of the site.
+2. -V : verbose
+3. http-form-post (type of method used) → Brupsuit.
+4. “Page of login :: /wp-login.php”
+5. 2  → :
+6. :log = ^USER^
+7. &amp;pwd=^PASS^
+8. &amp; → button 
+9. : F = *Message of error* → check the incoorrect message. 
+=============================================================
+</rich_text>
+    <rich_text background="#ffff00000000">Wordpress :</rich_text>
+    <rich_text> 
+hydra -l username -p password 192.168.10.1 -V http-form-post “/wp-login.php:log=^USER^&amp;pwd=^PASS^&amp;wp-submit=LogIn&amp;testcookie=1:F=incorrext” 
+==============================================================
+</rich_text>
+    <rich_text background="#ffff00000000">DVWA: </rich_text>
+    <rich_text>
+hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/login.php:username=^USER^&amp;password=^PASS^&amp;Login=Login:F=failed” 
+==============================================================
+
 </rich_text>
   </node>
 </cherrytree>
