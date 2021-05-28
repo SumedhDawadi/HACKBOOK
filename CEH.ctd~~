@@ -457,7 +457,7 @@ Firewall :: </rich_text>
 9. Using components with known vulnerabilities
 10. Insufficient logging and monitoring
 ==============================================================</rich_text>
-    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622177588">
+    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622199660">
       <rich_text># Cross site script is the process of injecting javascript of the server-side to gain control over the server. 
 #Always look at the source code after you inject the code. Sometimes it might reflect you back but will be stored in the code. 
 ==============================================================
@@ -474,13 +474,15 @@ Firewall :: </rich_text>
 
 2. </rich_text>
       <rich_text background="#ffff00000000">Stored XSS :</rich_text>
-      <rich_text> Stored XSS attack, a perpetrator has to locate a vulnerability in a web application and then inject malicious script into its server (e.g., via a comment field, Suggestion field). Stored XSS is related with Database.
+      <rich_text> Stored XSS attack, a perpetrator has to locate a vulnerability in a web application and then inject malicious script into its server (e.g., via a comment field, Suggestion field, Message forum, Visitor forum). Stored XSS is related with Server or Database.
 
 3.  </rich_text>
       <rich_text background="#ffff00000000">DOM XSS:</rich_text>
       <rich_text> DOM XSS stands for Document Object Model-based Cross-site Scripting. A DOM-based XSS attack is possible if the web application writes data to the Document Object Model without proper sanitization. This is related with HTML. If you can break the html code then its a DOM XSS.
 ==============================================================
-#Where should you look for XSS:
+</rich_text>
+      <rich_text background="#ffff00000000">#Where should you look for XSS:</rich_text>
+      <rich_text>
 1. Brupsuit.
 2. Look at the URL.
 3. Source-code must be looked after injecting javascipt.
@@ -490,10 +492,22 @@ Firewall :: </rich_text>
       <rich_text>
 1. Hacker can inject malicious javascript on the input field, if it triggers the other user can visiting the page with also be affected. 
 2. Hacker can get cookie of the website.
-3. </rich_text>
+3. Hacker can inject a code that redirects to vulneable login page.
+==============================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#Where can you inject the code:</rich_text>
+      <rich_text> 
+1. URL parameter : php?search=&lt;script&gt;alert(1)
+2. Comment box : &lt;img src=# onerror=alert(1)&gt;
+3. URL  that doesn't contain URL paramer: try to break the code by looking at its source code.
+==============================================================
+Link for payloads : </rich_text>
+      <rich_text link="webs https://github.com/payloadbox/xss-payload-list">https://github.com/payloadbox/xss-payload-list</rich_text>
+      <rich_text>
+==============================================================</rich_text>
     </node>
   </node>
-  <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622007952">
+  <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622199681">
     <rich_text background="#ffff00000000">hydra:</rich_text>
     <rich_text>
 -L : wordlist 
@@ -523,5 +537,38 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
 ==============================================================
 
 </rich_text>
+  </node>
+  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622202655">
+    <rich_text>1. Download and install Burpsuit.
+2. Foxyproxy must be added.
+3. CA cer must to exported to the browser.
+===============================================================
+1. </rich_text>
+    <rich_text background="#ffff00000000">HTTP history</rich_text>
+    <rich_text> : It shows the information that Burpsuit has intercerpted.
+------------------------------------------------------------------------------------------------------------------------------
+2. </rich_text>
+    <rich_text background="#ffff00000000">Site-map</rich_text>
+    <rich_text> : It shows all the information  such as directories of that particular website. 
+------------------------------------------------------------------------------------------------------------------------------
+3. </rich_text>
+    <rich_text background="#ffff00000000">Scope</rich_text>
+    <rich_text> : Scope means only the things you want to see while surfing. → Add to scope → HTTP history → Filter → Show only in scope iteams. And → Proxy → Options → enable AND
+------------------------------------------------------------------------------------------------------------------------------
+4. </rich_text>
+    <rich_text background="#ffff00000000">Repeater</rich_text>
+    <rich_text> : It will shows the response from the server. It let us to manuplate the information between Client and server where HTTP requests, and analyzing the application's responses. You can send a request to Repeater from anywhere within Burp, modify the request and issue it over and over.
+------------------------------------------------------------------------------------------------------------------------------
+5. </rich_text>
+    <rich_text background="#ffff00000000">Intruder </rich_text>
+    <rich_text>:  It helps to attack such as bruteforcing.   
+   →Sniper &amp; Battering : uses single wordlist.
+   →Pitchfork &amp; Cluster bomb : uses multiple wordlist. 
+------------------------------------------------------------------------------------------------------------------------------
+6. </rich_text>
+    <rich_text background="#ffff00000000">Sequencer</rich_text>
+    <rich_text> : Sequencer is a tool for analyzing the quality of randomness in a sample of data items. You can use it to test an application's session tokens or other important data items that are intended to be unpredictable, such as anti-CSRF tokens, password reset tokens, etc 
+------------------------------------------------------------------------------------------------------------------------------
+7. </rich_text>
   </node>
 </cherrytree>
