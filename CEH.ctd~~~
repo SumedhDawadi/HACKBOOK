@@ -91,7 +91,7 @@ Module 20: Cryptography
 
 </rich_text>
   </node>
-  <node name="Module 02: Footprinting and Reconnaissance" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622278205" ts_lastsave="1622280065">
+  <node name="Module 02: Footprinting and Reconnaissance" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622278205" ts_lastsave="1622280907">
     <rich_text>→ The art of gathering information of the target. The more you gather information the more you have attacking vectors. 
 
 </rich_text>
@@ -109,7 +109,9 @@ Module 20: Cryptography
 -Location
 -Bank detailes
 =====================================================================
-#Footprinting via Search-Engines.
+</rich_text>
+    <rich_text background="#ffff00000000">#Footprinting via Search-Engines.</rich_text>
+    <rich_text>
 1. Google-dorks : </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/pagodo.git">https://github.com/SumedhDawadi/pagodo.git</rich_text>
     <rich_text> </rich_text>
@@ -127,7 +129,9 @@ Module 20: Cryptography
 11. nuclei
 12. revIPlookup(github)
 =====================================================================
-
+#Advance tools :
+1. OSINT
+2. 
 </rich_text>
   </node>
   <node name="Module 03: Scanning Networks" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621588297" ts_lastsave="1621589803">
@@ -178,7 +182,7 @@ People finder :: </rich_text>
     <rich_text> This PC → Manage → Local users → User → Right-click → change the password. 
 ===================================================================
 </rich_text>
-    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1621940989">
+    <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1622280138">
       <rich_text>#This is similar to VAPT  
 #Use Linux. 
 ===================================================================
@@ -186,22 +190,22 @@ People finder :: </rich_text>
       <rich_text background="#ffff00000000">Find the active system in the network :</rich_text>
       <rich_text> 
 arp-scan --local
---------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 2. </rich_text>
       <rich_text background="#ffff00000000">Host-discovery :</rich_text>
       <rich_text> This will give you info about name of the PC and type of the server connected with network.
 nbtscan -r *IP address of the series* (example: nbtscan -r 192.168.222.1/24) :: 222 is the host 1 is initial IP.
----------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 3. </rich_text>
       <rich_text background="#ffff00000000">Scanning the particular IP that you want to penetrate :</rich_text>
       <rich_text> 
 nmap -sS -sV -A -T4- *IP address of the PC or Device*
----------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 4. </rich_text>
       <rich_text background="#ffff00000000">Find out the version name and google it to find out the payload. (exploitDB, seachsploit)</rich_text>
       <rich_text>
 vsftpd 2.3.4 
-----------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
       <rich_text background="#ffff00000000">5. Open Metasploit </rich_text>
       <rich_text>
@@ -496,7 +500,7 @@ Firewall :: </rich_text>
 ====================================================================
 #</rich_text>
   </node>
-  <node name="OWASP Top 10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622094841">
+  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622282040">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -514,8 +518,10 @@ Firewall :: </rich_text>
 8. Insecure deserialization
 9. Using components with known vulnerabilities
 10. Insufficient logging and monitoring
+11.[SSRF]SERVER SIDE REQUEST FORGERY
+
 ==============================================================</rich_text>
-    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622199660">
+    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622281142">
       <rich_text># Cross site script is the process of injecting javascript of the server-side to gain control over the server. 
 #Always look at the source code after you inject the code. Sometimes it might reflect you back but will be stored in the code. 
 ==============================================================
@@ -563,6 +569,26 @@ Link for payloads : </rich_text>
       <rich_text link="webs https://github.com/payloadbox/xss-payload-list">https://github.com/payloadbox/xss-payload-list</rich_text>
       <rich_text>
 ==============================================================</rich_text>
+    </node>
+    <node name="SERVER SIDE REQUEST FORGERY" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622281142" ts_lastsave="1622283125">
+      <rich_text># Server-Side Request Forgery (SSRF) refers to an attack, wherein an attacker can send a crafted request from a vulnerable web application. SSRF is mainly used to target internal systems behind WAF (web application firewall), that are unreachable to an attacker from the external network.
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">Impact :</rich_text>
+      <rich_text>
+  1.SSRF attacks often exploit trust relationships to escalate an attack from the vulnerable application and perform unauthorized actions. These trust relationships might exist in relation to the server itself, or in relation to other back-end systems within the same organization.
+  
+1.1 Port scanning: A user can scan the port of a particular website through the vulnerable web application which is processing the user’s URL.
+
+2. Fingerprinting intranet.
+
+3. Attacking internal or external web applications.
+
+4. Reading local web server files using the file:/// protocol handler.
+
+5. In some cases, a successful SSRF attack can even lead to Remote Code Execution (RCE).
+
+</rich_text>
     </node>
   </node>
   <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622270778">
@@ -695,7 +721,9 @@ baser64URLEncode(payload),secret)
     <rich_text background="#ffff00000000">#Working method of JWT : </rich_text>
     <rich_text>
 
-
+</rich_text>
+    <rich_text justification="left"></rich_text>
+    <rich_text>
 ==============================================================
 </rich_text>
     <rich_text background="#ffff00000000">#What can hacker get from jwt token:</rich_text>
