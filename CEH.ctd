@@ -538,7 +538,7 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
 
 </rich_text>
   </node>
-  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622202884">
+  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622265873">
     <rich_text>1. Download and install Burpsuit.
 2. Foxyproxy must be added.
 3. CA cer must to exported to the browser.
@@ -570,5 +570,13 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
     <rich_text> : Sequencer is a tool for analyzing the quality of randomness in a sample of data items. You can use it to test an application's session tokens or other important data items that are intended to be unpredictable, such as anti-CSRF tokens, password reset tokens, etc 
 ------------------------------------------------------------------------------------------------------------------------------
 7. </rich_text>
+    <rich_text background="#ffff00000000">Decode</rich_text>
+    <rich_text> : Decoder tab will decode html to string and so on. Most used to decode Base-64 .
+------------------------------------------------------------------------------------------------------------------------------
+8. </rich_text>
+    <rich_text background="#ffff00000000">Comparer</rich_text>
+    <rich_text> : Comparer will compare request/response based on string,value,length and data.
+------------------------------------------------------------------------------------------------------------------------------
+9. </rich_text>
   </node>
 </cherrytree>
