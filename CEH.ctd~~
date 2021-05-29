@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
   <bookmarks list=""/>
-  <node name="Course Outline:: EC-Council" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621153066" ts_lastsave="1621153068">
+  <node name="Course Outline:: EC-Council" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621153066" ts_lastsave="1622278109">
     <rich_text>Course Outline
 Module 01: Introduction to Ethical Hacking
 Module 02: Footprinting and Reconnaissance
@@ -23,9 +23,9 @@ Module 17: Hacking Mobile Platforms
 Module 18: IoT Hacking
 Module 19: Cloud Computing
 Module 20: Cryptography
-===================================================================</rich_text>
+================================================================</rich_text>
   </node>
-  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1621588297">
+  <node name="Module 01: Introduction to Ethical Hacking" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620975018" ts_lastsave="1622278530">
     <rich_text background="#ffff00000000">#Refer to TERMS AND TERMINOLOGY </rich_text>
     <rich_text>
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ Module 20: Cryptography
 ===================================================================
 </rich_text>
     <rich_text background="#ffff00000000">#Hacktavist </rich_text>
-    <rich_text>: The person who hacks and leave message, what did he/she hack and objective of hacking.
+    <rich_text>: The person who hacks and leave message, why did he/she hack and objective of hacking.
 ===================================================================
 </rich_text>
     <rich_text background="#ffff00000000">#Cyber-Crime and its type :</rich_text>
@@ -88,6 +88,47 @@ Module 20: Cryptography
     <rich_text link="webs https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-">https://github.com/SumedhDawadi/Cisco-Certified-Network-Associate-CCNA-</rich_text>
     <rich_text> 
 ===================================================================
+
+</rich_text>
+  </node>
+  <node name="Module 02: Footprinting and Reconnaissance" unique_id="23" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622278205" ts_lastsave="1622280075">
+    <rich_text>→ The art of gathering information of the target. The more you gather information the more you have attacking vectors. 
+
+</rich_text>
+    <rich_text background="#ffff00000000"># Type of Footprinting and Reconnaissance </rich_text>
+    <rich_text>:
+→ Active Recon : Direct access to the target. : To be connected with the network
+→ Passive Recon : Indirect access to the target
+=====================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Type of information we must gather?</rich_text>
+    <rich_text>
+-Email-address
+-Password 
+-Phone-number
+-Location
+-Bank detailes
+=====================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#Footprinting via Search-Engines.</rich_text>
+    <rich_text>
+1. Google-dorks : </rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/pagodo.git">https://github.com/SumedhDawadi/pagodo.git</rich_text>
+    <rich_text> </rich_text>
+    <rich_text link="webs https://www.exploit-db.com/google-hacking-database">https://www.exploit-db.com/google-hacking-database</rich_text>
+    <rich_text>
+2. Google advance search 
+3. Whoislookup
+4. nmap 
+5. hunter.io
+6. sublister
+7. virustotal.com
+8. recon-ng
+9. searchdns.netcraft.com
+10. amass
+11. nuclei
+12. revIPlookup(github)
+=====================================================================
 
 </rich_text>
   </node>
@@ -398,7 +439,7 @@ OR:
 ===================================================================
 </rich_text>
   </node>
-  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1622269219">
+  <node name="LINK for RESOURCES" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620974260" ts_lastsave="1622279166">
     <rich_text>KALI LINUX :: </rich_text>
     <rich_text link="webs https://www.kali.org/downloads/">https://www.kali.org/downloads/</rich_text>
     <rich_text>
@@ -419,7 +460,7 @@ Xerxes        :: </rich_text>
 Ufornet       :: </rich_text>
     <rich_text link="webs https://github.com/SumedhDawadi/ufonet.git">https://github.com/SumedhDawadi/ufonet.git</rich_text>
     <rich_text>
-===========================================================================
+====================================================================
 #</rich_text>
     <rich_text link="webs https://thehackernews.com/">https://thehackernews.com/</rich_text>
     <rich_text> 
@@ -440,7 +481,22 @@ Firewall :: </rich_text>
 </rich_text>
     <rich_text link="webs https://github.com/auth0/node-jsonwebtoken">https://github.com/auth0/node-jsonwebtoken</rich_text>
     <rich_text>
+#JWT cracker 
 </rich_text>
+    <rich_text link="webs https://github.com/lmammino/jwt-cracker">https://github.com/lmammino/jwt-cracker</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffff00000000">#Google dorks :</rich_text>
+    <rich_text> 
+</rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/pagodo.git">https://github.com/SumedhDawadi/pagodo.git</rich_text>
+    <rich_text> 
+</rich_text>
+    <rich_text link="webs https://www.exploit-db.com/google-hacking-database">https://www.exploit-db.com/google-hacking-database</rich_text>
+    <rich_text>
+====================================================================
+#</rich_text>
   </node>
   <node name="OWASP Top 10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622094841">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
@@ -511,7 +567,7 @@ Link for payloads : </rich_text>
 ==============================================================</rich_text>
     </node>
   </node>
-  <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622199681">
+  <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622270778">
     <rich_text background="#ffff00000000">hydra:</rich_text>
     <rich_text>
 -L : wordlist 
@@ -542,7 +598,20 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
 
 </rich_text>
   </node>
-  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622266167">
+  <node name="How to use CVE's and Scripts" unique_id="22" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622270778" ts_lastsave="1622271070">
+    <rich_text background="#ffff00000000">#Remember to find </rich_text>
+    <rich_text>
+1. Exploit that is in exploitDB or other platform with proper versions. 
+2. copy the exploit and and paste with proper extension such as python, bash, c 
+3. if the code is in c first compile and then get a final exploit  
+4. Read the code, in may case we need to put URL or other informatation. (URL)
+</rich_text>
+    <rich_text background="#ffff00000000">example :</rich_text>
+    <rich_text> python *name of the script* *paste the url*
+================================================================
+</rich_text>
+  </node>
+  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622277962">
     <rich_text>1. Download and install Burpsuit.
 2. Foxyproxy must be added.
 3. CA cer must to exported to the browser.
@@ -581,7 +650,7 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
     <rich_text background="#ffff00000000">Comparer</rich_text>
     <rich_text> : Comparer will compare request/response based on string,value,length and data.
 ------------------------------------------------------------------------------------------------------------------------------
-9. </rich_text>
+ </rich_text>
   </node>
   <node name="URL Encoding" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266167" ts_lastsave="1622266202"/>
   <node name="json web token" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266202" ts_lastsave="1622269918">
