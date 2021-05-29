@@ -616,7 +616,78 @@ Link for payloads : </rich_text>
 </rich_text>
     </node>
   </node>
-  <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622293660"/>
+  <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622300028">
+    <rich_text>#Filters can commonly used by web-developers in the webisite inorder to prevent from hacking. Filters can be bypassed. Waf are the common example of Filters.
+=====================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">Method-1</rich_text>
+    <rich_text> : Check attributes is being blocked or the whole Script is being blocked .
+ First try with simple payload </rich_text>
+    <rich_text background="#ffff00000000">&lt;script&gt;alert(1)&lt;/script&gt;</rich_text>
+    <rich_text>. if we got the 404 error or error such as behind the firewall then, try to figure out what is blocking us. first try with &lt;script&gt; if it let us in try &lt;/script&gt; again it let us in, try with alert(1) with script tag. once you find out the error using the tag.
+----------------------------------------------------------------------------------------------------------------------------------------- 
+</rich_text>
+    <rich_text background="#ffff00000000">Method-2</rich_text>
+    <rich_text> : Try to use lower case, upper case, encoding, space technique.
+-----------------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+    <rich_text background="#ffff00000000">Method-3</rich_text>
+    <rich_text> : Event handlers : such as onclick, onmouse, autofocus, audio, img , svg. These type of event is used to alert. 
+-----------------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+    <rich_text background="#ffff00000000">Method-4</rich_text>
+    <rich_text> : Delimeters and Brackets : ‘ ’ ," ", // , encoding can be used. 
+-----------------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+    <rich_text background="#ffff00000000">Method-5</rich_text>
+    <rich_text> : Pseudo - Protocols : &lt;a href="https://www.google.com"&gt; Clickme &lt;/a&gt;
+-----------------------------------------------------------------------------------------------------------------------------------------
+#How does Encoding prevent XSS attack : 
+1. &amp; → </rich_text>
+    <rich_text background="#ffff00000000">converted to</rich_text>
+    <rich_text> &amp;amp;
+2. &lt; -- &gt; </rich_text>
+    <rich_text background="#ffff00000000">converted to</rich_text>
+    <rich_text> &amp;it;
+3. &gt; -- &gt; </rich_text>
+    <rich_text background="#ffff00000000">converted to</rich_text>
+    <rich_text> &amp;quot;
+4. ' -- &gt; </rich_text>
+    <rich_text background="#ffff00000000">converted to</rich_text>
+    <rich_text> &amp;#x27; 
+
+=====================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">#How can we attack even if those type of filters are encoded :</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffff00000000">#Check the browser that you have and check</rich_text>
+    <rich_text>
+1.Go to : </rich_text>
+    <rich_text link="webs https://portswigger.net/web-security/cross-site-scripting/cheat-sheet">https://portswigger.net/web-security/cross-site-scripting/cheat-sheet</rich_text>
+    <rich_text>, this will let us make your own tags. 
+2.Open burpsuit, hit the tag that is blocked or any, intercept the request, send to intuder.
+3. Clear all the tag, select the attacking vector, from the website above select all tags, all events and all browser. 
+4. Selects Copy tags to clipboard from the Copy tags to clipboard.
+5. Go to payload → Payload options → and paste .
+6. Start attack 
+7. This will check the vaild tag that can be used. See length. 
+8. Space is denoted by %20
+9. After finding out the valid tag, let select appropriate event. 
+10. Same way select the event from website, copy and paste </rich_text>
+    <rich_text background="#ffff00000000">the event</rich_text>
+    <rich_text> to the intruder like before.
+====================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">Tips :</rich_text>
+    <rich_text>
+1. Use &lt;a href=#&gt;test&lt;/a&gt; instead of &lt;script&gt;alert(1)&lt;/script&gt;
+2. Try different browser, every browser works differently.
+====================================================================
+  
+ </rich_text>
+  </node>
   <node name="Sub-domain takeover" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622291147" ts_lastsave="1622291773">
     <rich_text background="#ffff00000000">#How can you take over subdomain? </rich_text>
     <rich_text>
