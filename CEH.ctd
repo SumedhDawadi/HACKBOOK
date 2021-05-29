@@ -501,7 +501,7 @@ Firewall :: </rich_text>
 ====================================================================
 #</rich_text>
   </node>
-  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622291147">
+  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622293290">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -522,7 +522,7 @@ Firewall :: </rich_text>
 11.[SSRF]SERVER SIDE REQUEST FORGERY
 
 ==============================================================</rich_text>
-    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622281142">
+    <node name="Cross-Site-Scripting" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622093825" ts_lastsave="1622293211">
       <rich_text># Cross site script is the process of injecting javascript of the server-side to gain control over the server. 
 #Always look at the source code after you inject the code. Sometimes it might reflect you back but will be stored in the code. 
 ==============================================================
@@ -558,6 +558,11 @@ Firewall :: </rich_text>
 1. Hacker can inject malicious javascript on the input field, if it triggers the other user can visiting the page with also be affected. 
 2. Hacker can get cookie of the website.
 3. Hacker can inject a code that redirects to vulneable login page.
+4. With the help of Ad-jacking we can host add on others side and earn money. (stored XSS)
+5. With the help of click-jacking we can overlap the victime website and host your phising site.(eg:download button → other page)
+6. Steeling cookie .
+7. Page can be redircted.
+8. 
 ==============================================================
 </rich_text>
       <rich_text background="#ffff00000000">#Where can you inject the code:</rich_text>
@@ -611,6 +616,7 @@ Link for payloads : </rich_text>
 </rich_text>
     </node>
   </node>
+  <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622293660"/>
   <node name="Sub-domain takeover" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622291147" ts_lastsave="1622291773">
     <rich_text background="#ffff00000000">#How can you take over subdomain? </rich_text>
     <rich_text>
