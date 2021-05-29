@@ -155,7 +155,7 @@ People finder :: </rich_text>
 
 </rich_text>
   </node>
-  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1621238604">
+  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1622290803">
     <rich_text weight="heavy">System hacking</rich_text>
     <rich_text justification="left" scale="h3"> is the way </rich_text>
     <rich_text weight="heavy">hackers</rich_text>
@@ -225,6 +225,7 @@ vsftpd 2.3.4
 </rich_text>
     </node>
   </node>
+  <node name="Module 08: Sniffing" unique_id="25" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622290803" ts_lastsave="1622290803"/>
   <node name="Module 09: Social Engineering" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621238604" ts_lastsave="1621239532">
     <rich_text>1. Social engineering is a technique used by criminals and cyber-crooks to trick users into revealing confidential information. The data obtained is then used to gain access to systems and carry out actions to the detriment of the person or organization whose data has been revealed.
 
@@ -500,7 +501,7 @@ Firewall :: </rich_text>
 ====================================================================
 #</rich_text>
   </node>
-  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622282040">
+  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622291147">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -570,7 +571,7 @@ Link for payloads : </rich_text>
       <rich_text>
 ==============================================================</rich_text>
     </node>
-    <node name="SERVER SIDE REQUEST FORGERY" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622281142" ts_lastsave="1622283125">
+    <node name="SERVER SIDE REQUEST FORGERY" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622281142" ts_lastsave="1622285276">
       <rich_text># Server-Side Request Forgery (SSRF) refers to an attack, wherein an attacker can send a crafted request from a vulnerable web application. SSRF is mainly used to target internal systems behind WAF (web application firewall), that are unreachable to an attacker from the external network.
 =====================================================================
 </rich_text>
@@ -587,9 +588,45 @@ Link for payloads : </rich_text>
 4. Reading local web server files using the file:/// protocol handler.
 
 5. In some cases, a successful SSRF attack can even lead to Remote Code Execution (RCE).
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">Type of SSRF</rich_text>
+      <rich_text>
+• Blind. Blind </rich_text>
+      <rich_text weight="heavy">SSRF</rich_text>
+      <rich_text> occurs when you never get any information about a target service from the initial request. ...
+• Semi-Blind. ...
+• Non-Blind. ...
+• Sensitive Data Exposure. ...
+• Unauthenticated Requests. ...
+• Port Scans or Cross Site Port </rich_text>
+      <rich_text weight="heavy">Attack</rich_text>
+      <rich_text> (XSPA) ...
+• Protocol Smuggling. ...
+• Server-Side Rendering.
+=====================================================================
+
+
 
 </rich_text>
     </node>
+  </node>
+  <node name="Sub-domain takeover" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622291147" ts_lastsave="1622291654">
+    <rich_text background="#ffff00000000">#How can you take over subdomain? </rich_text>
+    <rich_text>
+→ make sure of the DNS information. 
+→ check the status code : status code must be 404 error
+
+</rich_text>
+    <rich_text background="#ffff00000000">steps: via GITHUB :</rich_text>
+    <rich_text> 
+→ Create a repo
+→ Repository name as whatever you like.
+→ Create a file name with CNAME and add the subdomain url that you want to take over. without https://
+→ Add a file as index.html with html or txt tages
+→ Settings → change it to main and root 
+→ G
+</rich_text>
   </node>
   <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622270778">
     <rich_text background="#ffff00000000">hydra:</rich_text>
