@@ -616,7 +616,7 @@ Link for payloads : </rich_text>
 </rich_text>
     </node>
   </node>
-  <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622299948">
+  <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622300028">
     <rich_text>#Filters can commonly used by web-developers in the webisite inorder to prevent from hacking. Filters can be bypassed. Waf are the common example of Filters.
 =====================================================================
 </rich_text>
@@ -683,15 +683,20 @@ Link for payloads : </rich_text>
     <rich_text background="#ffff00000000">Tips :</rich_text>
     <rich_text>
 1. Use &lt;a href=#&gt;test&lt;/a&gt; instead of &lt;script&gt;alert(1)&lt;/script&gt;
-2. Try different browser, every b
+2. Try different browser, every browser works differently.
+====================================================================
   
  </rich_text>
   </node>
-  <node name="Sub-domain takeover" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622291147" ts_lastsave="1622291773">
+  <node name="Sub-domain takeover" unique_id="26" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622291147" ts_lastsave="1622346648">
     <rich_text background="#ffff00000000">#How can you take over subdomain? </rich_text>
     <rich_text>
 → make sure of the DNS information. 
 → check the status code : status code must be 404 error
+→ dig *subdomain* (without </rich_text>
+    <rich_text link="webs https://">https://</rich_text>
+    <rich_text>) 
+→ host *subdomain*
 
 </rich_text>
     <rich_text background="#ffff00000000">steps: via GITHUB :</rich_text>
@@ -704,6 +709,27 @@ Link for payloads : </rich_text>
 → Github will check the nesessary information like DNS info. if you dont get error there is possiblity of takeover
 → .html file must created as POC. 
 =====================================================================
+</rich_text>
+    <rich_text scale="h1" background="#ffff00000000">AWS subdomain</rich_text>
+    <rich_text>
+→ make sure of the DNS information. 
+→ check the status code : status code must be 404 error
+→ dig *subdomain* (without </rich_text>
+    <rich_text link="webs https://">https://</rich_text>
+    <rich_text>) 
+→ host *subdomain*
+
+→ create a account of s3.console.aws.amazon.com
+→ create bucket using the subdomain that you want to take and the region.
+→ uncheck the option block all public access 
+→ Option manage system permission → grant amazon s3 log delivery ..
+→ click on the create bucket
+→ we have created bucked, let upload our index page.
+→ click the subdomain that you created : upload → upload the index.html
+→ lets make the index.html file public. : overview → actions → make publiic.
+→ enable static hosting : properties →  enable static website hosting → index document → index.html → save
+→ Re-check, if you find the same html file that you upload then subdomain has been tak
+
 </rich_text>
   </node>
   <node name="Brute Force &amp; Cracking password" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622004540" ts_lastsave="1622270778">
