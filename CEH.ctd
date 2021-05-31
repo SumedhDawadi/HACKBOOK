@@ -1058,11 +1058,11 @@ sitedigger
 </rich_text>
   </node>
   <node name="Tools" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442447" ts_lastsave="1622442920">
-    <node name="Nuclie" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442880" ts_lastsave="1622481113">
+    <node name="Nuclie" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442880" ts_lastsave="1622481129">
       <rich_text>#Nuclei is one of the tool Projected by project discovery. It is a powerful tools that will help you for automate Vulnerablity scanning, Reconnaissance, Penetration Testing with ease.
 ----------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
-      <rich_text justification="left" weight="heavy">Features</rich_text>
+      <rich_text justification="left" background="#ffff00000000" weight="heavy">Features</rich_text>
       <rich_text>
 • Simple and modular code base making it easy to contribute.
 • Fast And fully configurable using a template based engine.
@@ -1111,11 +1111,47 @@ sitedigger
 ------------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
     </node>
-    <node name="GAU (GetAllUrls)" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442920" ts_lastsave="1622444100">
-      <rich_text link="webs https://latesthackingnews.com/2021/04/06/gau-getallurls-review-a-tool-for-discovering-urls/">https://latesthackingnews.com/2021/04/06/gau-getallurls-review-a-tool-for-discovering-urls/</rich_text>
+    <node name="GAU (GetAllUrls)" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442920" ts_lastsave="1622481754">
+      <rich_text>====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">How gau Works?</rich_text>
+      <rich_text>
+→ Gau is used for finding the URLs of a domain which can further be used to discover vulnerabilities.
+=====================================================================
+-random-agent: use a random agent.
+-b: extension to skip 
+-subs:  include subdomains of a target domain.
+ 
+</rich_text>
+      <rich_text background="#ffff00000000">#For single URL:</rich_text>
+      <rich_text>
+→ echo "</rich_text>
+      <rich_text link="webs https://hackerone.com&quot;">https://hackerone.com"</rich_text>
+      <rich_text> | gau
+
+</rich_text>
+      <rich_text background="#ffff00000000">#Using gau efficiently.</rich_text>
+      <rich_text>
+→ gau -random-agent -b css,png,jpeg,jpg,svg,gif,ttf,woff,woff2,eot,otf,ico,js -subs example.com | sort -u &gt;&gt;results.txt
+=====================================================================
+
+
+
+</rich_text>
     </node>
-    <node name="Subfinder" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622443030" ts_lastsave="1622443053">
-      <rich_text link="webs https://latesthackingnews.com/2021/01/23/subfinder-a-subdomain-discovery-tool/">https://latesthackingnews.com/2021/01/23/subfinder-a-subdomain-discovery-tool/</rich_text>
+    <node name="Subfinder" unique_id="34" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622443030" ts_lastsave="1622482008">
+      <rich_text>Subfinder is a subdomain discovery tool that discovers valid subdomains for websites by using passive online sources. It has a simple modular architecture and is optimized for speed. subfinder is built for doing one thing only – passive subdomain enumeration, and it does that very well.
+=====================================================================
+1.To start scanning the target domain, provide the subfinder the domain in the following format.
+→ subfinder -d *URL*
+
+2. To store the output in a file, the following command is used.
+→ Subfinder -d domain-name -o results.txt
+
+3. To use all the sources and show only the subdomain the following command is used.
+→ subfinder -all -silent -d domain-name -o result.txt
+=====================================================================
+</rich_text>
     </node>
   </node>
 </cherrytree>
