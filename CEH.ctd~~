@@ -134,7 +134,7 @@ Module 20: Cryptography
 2. 
 </rich_text>
   </node>
-  <node name="Module 03: Scanning Networks" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621588297" ts_lastsave="1621589803">
+  <node name="Module 03: Scanning Networks" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621588297" ts_lastsave="1622380940">
     <rich_text>#This is related with information gathering. 
 #More information more hacks can more performed. 
 #Social networks, phone number etc are best to gather information of the victims. (Facebook, twitter,github)
@@ -152,6 +152,11 @@ People finder :: </rich_text>
     <rich_text>
 ===================================================================
 
+
+</rich_text>
+  </node>
+  <node name="Module 04: Enumeration" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622380940" ts_lastsave="1622381029">
+    <rich_text># Enumeration is defined as the process of extracting user names, machine names, network resources, shares and services from a system. In this phase, the attacker creates an active connection to the system and performs directed queries to gain more information about the target.
 
 </rich_text>
   </node>
@@ -615,7 +620,7 @@ Link for payloads : </rich_text>
 
 </rich_text>
     </node>
-    <node name="Broken access control" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622350822" ts_lastsave="1622367943">
+    <node name="Broken access control" unique_id="28" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622350822" ts_lastsave="1622380882">
       <rich_text>#Access control enforces policy such that users cannot act outside of their intended permissions. Failures typically lead to unauthorized information disclosure, modification or destruction of all data, or performing a business function outside of the limits of the user.
 #</rich_text>
       <rich_text background="#ffff00000000">Example:</rich_text>
@@ -688,7 +693,7 @@ Link for payloads : </rich_text>
       <rich_text> In  this features roles are divided, either simple role or premium role is assigned example on Spotify. Here parameter is changed using brupsuit (intercepted) and then changed.
 
 </rich_text>
-      <rich_text background="#ffff00000000">Example :</rich_text>
+      <rich_text background="#ffff00000000">Example 1:</rich_text>
       <rich_text> </rich_text>
       <rich_text link="webs http://example.com/login/admin=false">http://example.com/login/admin</rich_text>
       <rich_text link="webs http://example.com/login/admin=false" background="#ffff00000000">=false</rich_text>
@@ -698,11 +703,17 @@ Link for payloads : </rich_text>
       <rich_text background="#ffff00000000"> </rich_text>
       <rich_text>
 
-Example : </rich_text>
+</rich_text>
+      <rich_text background="#ffff00000000">Example 2 :</rich_text>
+      <rich_text> </rich_text>
       <rich_text link="webs http://example.com/login/admin=false">http://example.com/login/role</rich_text>
-      <rich_text>=1 is chnaged to  </rich_text>
-      <rich_text link="webs http://example.com/login/admin=true">http://example.com/login/admin=</rich_text>
-      <rich_text>2
+      <rich_text background="#ffff00000000">=1</rich_text>
+      <rich_text> is chnaged to  </rich_text>
+      <rich_text link="webs http://example.com/login/admin=2">http://example.com/login/admin</rich_text>
+      <rich_text link="webs http://example.com/login/admin=2" background="#ffff00000000">=2</rich_text>
+      <rich_text>
+
+------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
