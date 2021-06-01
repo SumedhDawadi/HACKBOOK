@@ -155,7 +155,7 @@ People finder :: </rich_text>
 
 </rich_text>
   </node>
-  <node name="Module 04: Enumeration" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622380940" ts_lastsave="1622530014">
+  <node name="Module 04: Enumeration" unique_id="29" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622380940" ts_lastsave="1622543840">
     <rich_text background="#ffff00000000">#</rich_text>
     <rich_text> Enumeration is defined as the process of extracting user names, machine names, network resources, shares and services from a system. In this phase, the attacker creates an active connection to the system and performs directed queries to gain more information about the target.
 
@@ -183,64 +183,66 @@ People finder :: </rich_text>
 
 
 </rich_text>
-    <node name="Nmap" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622530014" ts_lastsave="1622531241">
+    <node name="Nmap" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622530014" ts_lastsave="1622543931">
       <rich_text>
 
-Target Selection
+</rich_text>
+      <rich_text background="#ffff00000000">Target Selection</rich_text>
+      <rich_text>
 
 Scan a single IP:
 nmap 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan a host:
 nmap </rich_text>
       <rich_text link="webs http://www.testhostname.com">www.testhostname.com</rich_text>
       <rich_text>
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan a range of IPs:
 nmap 192.168.0.1-20
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan a subnet:
 nmap 192.168.0.0/24
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan targets from a text file:
 nmap -iL list-of-ips.txt
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Port Selection
 Scan a single port:
 nmap -p 22 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan a range of ports:
 nmap -p 1-100 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan 100 common ports:
 nmap -F 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan all ports(65535):
 nmap -p- 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Specify UDP or TCP scan:
 nmap -p U:137,T:139 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
       <rich_text background="#ffff00000000">Scan types</rich_text>
       <rich_text>
 
 Scan using TCP connect
 nmap -sT 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan using TCP SYN scan
 nmap -sS 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Privileged access is required to perform the default SYN scans
 
 </rich_text>
       <rich_text background="#ffff00000000">Scan UDP ports</rich_text>
       <rich_text>
 nmap -sU -p 123,161,162 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Scan selected ports (ignore discovery):
 nmap -Pn -F 192.168.0.1
-
+------------------------------------------------------------------------------------------------------------------------------------------
 Ignoring discovery is often required as many firewalls or hosts will not respond to PING, so could be missed unless you select the -Pn parameter.
 
 Service and OS Detection
@@ -351,7 +353,55 @@ nmap --script smb-brute.nse -p445 192.168.0.0/24
 → nmap -p80 --script http-unsafe-output-escaping scanme.nmap.org
 
 7. Check for SQL injections 
-→ nmap -p80 --script http-sql-injection scanme.nmap.org </rich_text>
+→ nmap -p80 --script http-sql-injection scanme.nmap.org
+====================================================================
+ </rich_text>
+    </node>
+    <node name="SMB-Enumeration" unique_id="37" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622543840" ts_lastsave="1622543915">
+      <rich_text>SMB stands for SERVER Message BLOCK ::: RUNS in PORT number of 139 or 445
+SMB helps to share and other device like printer and so on on the network.
+SMB helps to communicate within the network
+=====================================================================
+namp -sV -p21-8080 --script vulners *IP ADDRESS*
+=====================================================================
+#ONJECTIVE:: 
+OS runnning exact version of SMB protocols.
+LOCATION :: /USR/SHARE/namp/script/ |grep -e "smb"
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#Syntax :</rich_text>
+      <rich_text>
+nmap -p 445 --script smb-os-os-discovery *IP ADDRESS*
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#ACTIVE share that are active (SERVICE)</rich_text>
+      <rich_text>
+nmap -p 445 --script smb-enum *IP ADDRESS*
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#Enumerating the users : </rich_text>
+      <rich_text>
+nmap -p 445 --script smb-enum-users **IP ADDRESS*
+=====================================================================
+linux4enum *IP ADDRESS*
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#Findig username of the SMB Client</rich_text>
+      <rich_text>
+smbclient -L \\\\*IP Address*\\
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#After finding the users in the SMB BOX:</rich_text>
+      <rich_text>
+smbclient //*IP ADDRESS*/*USERNAME*
+or
+smbget -R smb://*IP ADDRESS*/*Name of the user*/
+=====================================================================
+</rich_text>
+      <rich_text background="#ffff00000000">#IF you get what SMB version is running: </rich_text>
+      <rich_text>
+smbclient //*IP ADDRESS/*NAME of the service*
+=====================================================================</rich_text>
     </node>
   </node>
   <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1622290803">
@@ -1077,7 +1127,7 @@ hydra -l admin -P /usr/share/wordlists 192.168.101.1 -V http-form-post “/dvwa/
 ================================================================
 </rich_text>
   </node>
-  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622277962">
+  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622538115">
     <rich_text>1. Download and install Burpsuit.
 2. Foxyproxy must be added.
 3. CA cer must to exported to the browser.
