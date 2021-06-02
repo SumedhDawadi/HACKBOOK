@@ -183,10 +183,7 @@ People finder :: </rich_text>
 
 
 </rich_text>
-    <node name="Nmap" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622530014" ts_lastsave="1622544087">
-      <rich_text>
-
-</rich_text>
+    <node name="Nmap" unique_id="36" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622530014" ts_lastsave="1622544105">
       <rich_text background="#ffff00000000">Target Selection</rich_text>
       <rich_text>
 
@@ -1307,7 +1304,7 @@ sitedigger
 
 </rich_text>
   </node>
-  <node name="Tools" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442447" ts_lastsave="1622517802">
+  <node name="Tools" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442447" ts_lastsave="1622614549">
     <node name="Nuclie" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442880" ts_lastsave="1622481129">
       <rich_text>#Nuclei is one of the tool Projected by project discovery. It is a powerful tools that will help you for automate Vulnerablity scanning, Reconnaissance, Penetration Testing with ease.
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -1462,6 +1459,20 @@ sitedigger
 → recon/domains-hosts/brute_hosts #Bruteforce domains.
 → discovery/info_disclosure/interesting_files #Interesting files.
 → </rich_text>
+    </node>
+    <node name="theHarvester" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622614549" ts_lastsave="1622616064">
+      <rich_text background="#ffff00000000">#Commands:</rich_text>
+      <rich_text>       
+        theharvester -d microsoft.com -l 500 -b google -h myresults.html
+        theharvester -d microsoft.com -b pgp
+        theharvester -d microsoft -l 200 -b linkedin
+        theharvester -d apple.com -b googleCSE -l 500 -s 300
+        theHarvester -d elsevier.com -b all
+        </rich_text>
+      <rich_text weight="heavy"> theharvester -d cvcc.edu -l 500 -b google -f myresults.html</rich_text>
+      <rich_text>
+=====================================================================
+</rich_text>
     </node>
   </node>
 </cherrytree>
