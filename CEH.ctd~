@@ -474,13 +474,42 @@ smbclient //*IP ADDRESS/*NAME of the service*
 
 </rich_text>
     </node>
-    <node name="System Hacking | RAT | Windows" unique_id="52" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623395098" ts_lastsave="1623395291">
+    <node name="System Hacking | RAT | Windows | (WAN)" unique_id="52" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623395098" ts_lastsave="1623400063">
       <rich_text background="#ffff00000000">#Things you need :</rich_text>
       <rich_text>
-1. OPEN-VPN installed on the windows box of the attacker machine. → Give Static IP to us
+1. OPEN-VPN installed on the windows box of the attacker machine(64-bit). → Give Static IP to us
 2. Extra VPN → ProtonVPN
-3. RAT → Remote Access Trojan
-4. PortMap.io → To forward the payload </rich_text>
+3. RAT → Remote Access Trojan : Github
+4. PortMap.io → To forward the payload → create a account. 
+----------------------------------------------------------------------------------------------------------------------------------------
+→ click on create new configuration from portmap.io 
+→ select on TCP 
+→ Generate 
+→ Download → This will download .openVPN.
+→ Go to OpenVPN → community → downloads → download windows 64-bit MSI installer.
+→ Right click to OPENVPN → import → select the file that you have downloaded. (ovenvpn ext)
+→ Connect the OpenVPN from right click. → once it is connected green icon appears 
+→ Go to portmap.io→ Mapping rules → create new rules → Change portmap.host to portmap.io → port 1234 → create 
+→ Copy the tcp://*nbghinkko98.portmap.io* without tcp:// → ping via CMD
+→ If you get error while pinging → Use VPN → Again ping the command *nbghinkko98.portmap.io*
+
+</rich_text>
+      <rich_text background="#ffff00000000">#Let's make payload via RAT.</rich_text>
+      <rich_text> 
+→ Open the RAT 
+→ On the IP section put the same IP you got ie nbghinkko98.portmap.io 
+→ Port number must be the same that you got from the portmap.oi → nbghinkko98.portmap.io:</rich_text>
+      <rich_text foreground="#0000ffff0000">27985</rich_text>
+      <rich_text>
+→ Tick to Percestance and hide if you want to. 
+→ Check the mode if you want to which kind of payload you want to create.
+→ Generate
+→ Send the payload to victime  OR Fire-up to send-anywhere.com → add the payload and upload→ You will receive the code → Ask the victime to open Send-anywhere.com and put the recieve code and download it #This will upload the file (payload) on internet.
+→ Payload is available to </rich_text>
+      <rich_text foreground="#0000ffff0000">%temp%</rich_text>
+      <rich_text> → named as cvvl.mi → rename the file as you like.
+→ On the RAT → Builder tab → port 1234 → click Listen → check on the connection tab
+</rich_text>
     </node>
     <node name="System Hacking Via Network + Web Server Hacking" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621161428" ts_lastsave="1622280138">
       <rich_text>#This is similar to VAPT  
