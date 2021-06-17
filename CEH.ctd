@@ -407,7 +407,7 @@ smbclient //*IP ADDRESS/*NAME of the service*
 =====================================================================</rich_text>
     </node>
   </node>
-  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1623820578">
+  <node name="Module 06: System Hacking" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621159298" ts_lastsave="1623945396">
     <rich_text weight="heavy">System hacking</rich_text>
     <rich_text justification="left" scale="h3"> is the way </rich_text>
     <rich_text weight="heavy">hackers</rich_text>
@@ -550,6 +550,90 @@ vsftpd 2.3.4
 
 #This is how can hack into network.
 ===================================================================
+
+
+</rich_text>
+    </node>
+    <node name="Web Application Hacking" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623945396" ts_lastsave="1623948770">
+      <rich_text background="#ffff00000000">#Terminology</rich_text>
+      <rich_text>
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Web-Application:</rich_text>
+      <rich_text> Web-Application are applications that runs on the remote applications server and available for client over the internet. 
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Server Administations :</rich_text>
+      <rich_text> Are responsible for the web server's safety, speed, functioning and performance.
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Client :</rich_text>
+      <rich_text> Are the endpoint which interact with the web application / server. 
+→ GET : Used to fetch client-side pages from the server
+→ POST: Used to send the data to server 
+
+---------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#How web application works?</rich_text>
+      <rich_text> 
+→ Front-end : User interacting the front-end (Client-side) 
+→ The process was controlled and processd by the back-end.
+----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Server-side Language (Back-end)</rich_text>
+      <rich_text>
+→ PHP - Hypertext Processer 
+→ JAVA
+→ C#
+→ Python 
+→ JavaScript
+→ Etc.
+-----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Client-side language (Front-end)</rich_text>
+      <rich_text>
+→ HTML
+→ CSS
+→ JavaScript 
+----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Basic-Most common threat for Web-application.</rich_text>
+      <rich_text> 
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Insecure-Storage :</rich_text>
+      <rich_text> Sensitive data that is stored on the client-side in plain text. (Cookies, data value). This happen when data is not encoded, encryption or security measure. Different algo is used to encryption.
+-----------------------------------------------------------------------------------------------------------------------------------
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Information leakage</rich_text>
+      <rich_text> : Sensitive data that is being leaked unintetionally. Such as database queries or Database information is leaked on the client side. This is also called error-handling.
+
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Parameter/Form (Tempering)</rich_text>
+      <rich_text> : Modify paramerter value with http-method such as transction, date, name, address, price etc . Any changes can be made . Use brupsuit for this vulnerablity.
+-----------------------------------------------------------------------------------------------------------------------------------
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Directory Tarvesal</rich_text>
+      <rich_text> : Able to access server-side directory. Such as /etc/passwd.
+
+→ Buffer-overflow : Flooding server with buffer junk, payloads (RCE, Admin privex, 50 char)
+→ SQL 
+→ XSS
+→ Broken session 
+→ Session hijacking
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </rich_text>
@@ -1064,7 +1148,7 @@ OR:
     </node>
   </node>
   <node name="PENTESTING" unique_id="49" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623348150" ts_lastsave="1623348150"/>
-  <node name="Bugs (EXPLAINATION)" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1623823996">
+  <node name="Bugs (EXPLAINATION)" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1623831641">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -1370,6 +1454,16 @@ Link for payloads : </rich_text>
  
   
  </rich_text>
+    </node>
+    <node name="WEBSOCKETS" unique_id="56" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623831641" ts_lastsave="1623831909">
+      <rich_text>→ </rich_text>
+      <rich_text weight="heavy">WebSocket</rich_text>
+      <rich_text> is a computer communications protocol, providing full-duplex communication channels over a single TCP connection 
+→ Websocket communicates on port 80 HTTP. 
+→ While communicating between client and server, it needs to create connection every-time. 
+→ Web-socket helps to create a tunnel between client and server, that dosent checks the connection type. 
+→ 
+</rich_text>
     </node>
   </node>
   <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622894939">
@@ -2033,7 +2127,7 @@ Remember :
 ================================================================
 </rich_text>
   </node>
-  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1622538115">
+  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1623829590">
     <rich_text>1. Download and install Burpsuit.
 2. Foxyproxy must be added.
 3. CA cer must to exported to the browser.
@@ -2073,6 +2167,11 @@ Remember :
     <rich_text> : Comparer will compare request/response based on string,value,length and data.
 ------------------------------------------------------------------------------------------------------------------------------
  </rich_text>
+    <node name="BURP COLLABRATOR" unique_id="55" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623829590" ts_lastsave="1623829634">
+      <rich_text>→ YOU CAN USE IT TO FIND BLIND SSRF/XSS/SQL
+→ 
+</rich_text>
+    </node>
   </node>
   <node name="URL Encoding" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266167" ts_lastsave="1622266202"/>
   <node name="json web token" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266202" ts_lastsave="1622895083">
