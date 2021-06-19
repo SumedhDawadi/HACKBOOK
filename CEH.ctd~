@@ -554,7 +554,7 @@ vsftpd 2.3.4
 
 </rich_text>
     </node>
-    <node name="Web Application Hacking" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623945396" ts_lastsave="1623948767">
+    <node name="Web Application Hacking" unique_id="57" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623945396" ts_lastsave="1624036348">
       <rich_text background="#ffff00000000">#Terminology</rich_text>
       <rich_text>
 → </rich_text>
@@ -607,12 +607,12 @@ vsftpd 2.3.4
 → </rich_text>
       <rich_text foreground="#0000ffff0000">Parameter/Form (Tempering)</rich_text>
       <rich_text> : Modify paramerter value with http-method such as transction, date, name, address, price etc . Any changes can be made . Use brupsuit for this vulnerablity.
----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
 → </rich_text>
       <rich_text foreground="#0000ffff0000">Directory Tarvesal</rich_text>
       <rich_text> : Able to access server-side directory. Such as /etc/passwd.
 
-→ Buffer-overflow : Flooding server with buffer junk, payloads (RCE, Admin privex, 50 char)
+→ Buffer-overflow : Flooding server with buffer junk, payloads, (RCE, Admin privex, 50 char)
 → SQL 
 → XSS
 → Broken session 
@@ -1147,7 +1147,6 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="PENTESTING" unique_id="49" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623348150" ts_lastsave="1623348150"/>
   <node name="Bugs (EXPLAINATION)" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1623831641">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
@@ -2127,10 +2126,11 @@ Remember :
 ================================================================
 </rich_text>
   </node>
-  <node name="Introduction to Burp Suite" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1623829590">
+  <node name="BurpSuit" unique_id="19" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622199681" ts_lastsave="1624117277">
     <rich_text>1. Download and install Burpsuit.
 2. Foxyproxy must be added.
 3. CA cer must to exported to the browser.
+4. Highlighter is handly to identify the resquest and responses.
 ===============================================================
 1. </rich_text>
     <rich_text background="#ffff00000000">HTTP history</rich_text>
@@ -2167,11 +2167,61 @@ Remember :
     <rich_text> : Comparer will compare request/response based on string,value,length and data.
 ------------------------------------------------------------------------------------------------------------------------------
  </rich_text>
-    <node name="BURP COLLABRATOR" unique_id="55" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623829590" ts_lastsave="1623829634">
-      <rich_text>→ YOU CAN USE IT TO FIND BLIND SSRF/XSS/SQL
-→ 
+    <node name="Scanning-Website" unique_id="58" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624115236" ts_lastsave="1624116270">
+      <rich_text>→ </rich_text>
+      <rich_text background="#ffff00000000">Dashboard→ New-scan(tab)→ Scan-detaile→ Craw and Audit → Enter the domain without http and www</rich_text>
+      <rich_text>
+→ Crawling will find subdomains, directories and other information
+→ Scan configuration → Select from library
+→ Choose the type of library that you want to scan the website → Ok 
+
 </rich_text>
     </node>
+    <node name="BURP COLLABRATOR" unique_id="55" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623829590" ts_lastsave="1624118611">
+      <rich_text>→ YOU CAN USE IT TO FIND BLIND SSRF/XSS/SQL/XEE
+→ If the website is open redirect vulnerablity then Collabrator comes in handy.
+#You can find this on :
+→ Burp→ Burp Collabroator Client 
+→ Use the payload in User-Agent 
+-----------------------------------------------------------------------------------------------------------------------------------
+→ Brup collabrator will take payload and inject the payload 
+-----------------------------------------------------------------------------------------------------------------------------------
+#How to use : 
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Number to generate:</rich_text>
+      <rich_text> Payloads that you want. Eg: 1 or 100 or even 1000
+→ Copy the payload 
+→ Find the injection point or any input form and paste the payload to the injection point.
+→ </rich_text>
+      <rich_text foreground="#0000ffff0000">Poll now.</rich_text>
+      <rich_text>
+→ If you get the response in the collabrator then Payload has been executed. 
+→ Dont exit the collabator tab unless you are done finding.
+-----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+    </node>
+  </node>
+  <node name="C Exploits" unique_id="59" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624116416" ts_lastsave="1624117031">
+    <rich_text background="#ffff00000000">Compiling C code.</rich_text>
+    <rich_text> 
+→ gcc *Source-code* -o *rename with your own name* 
+Example : </rich_text>
+    <rich_text foreground="#0000ffff0000">gcc exploit.c -o Sumedh</rich_text>
+    <rich_text>  
+</rich_text>
+    <rich_text background="#ffff00000000">After compiling:</rich_text>
+    <rich_text> 
+</rich_text>
+    <rich_text foreground="#0000ffff0000">./Sumedh</rich_text>
+    <rich_text>
+-----------------------------------------------------------------------------------------------------------------------------------
+#If the code is in 32-bit then add :
+→ -m32
+-----------------------------------------------------------------------------------------------------------------------------------
+→ </rich_text>
+    <rich_text background="#ffff00000000">Make sure you visit to github for official manual before running the exploit.</rich_text>
+    <rich_text>
+</rich_text>
   </node>
   <node name="URL Encoding" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266167" ts_lastsave="1622266202"/>
   <node name="json web token" unique_id="21" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622266202" ts_lastsave="1622895083">
