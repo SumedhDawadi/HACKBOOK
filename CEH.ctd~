@@ -1147,7 +1147,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624168751">
+  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624170502">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -1464,8 +1464,9 @@ Link for payloads : </rich_text>
 → 
 </rich_text>
     </node>
+    <node name="XXE || injection" unique_id="64" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624170502" ts_lastsave="1624170502"/>
   </node>
-  <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624170061">
+  <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624170083">
     <rich_text>1. </rich_text>
     <rich_text background="#ffff00000000" weight="heavy">Response Manipulation</rich_text>
     <rich_text weight="heavy"> :</rich_text>
@@ -1514,7 +1515,9 @@ Link for payloads : </rich_text>
 10. </rich_text>
     <rich_text background="#ffff00000000">Bypass 2FA with Null or 000000 :</rich_text>
     <rich_text> Enter the code 0000 or null to bypass the 2FA protection.
-----------------------------------------------------------------------------------------------------------------------------------  </rich_text>
+----------------------------------------------------------------------------------------------------------------------------------  
+
+</rich_text>
   </node>
   <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622894939">
     <rich_text>#Filters can commonly used by web-developers in the webisite inorder to prevent from hacking. Filters can be bypassed. Waf are the common example of Filters.

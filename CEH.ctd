@@ -815,7 +815,304 @@ Simple firewall :: </rich_text>
     <rich_text>
 ======================================================================</rich_text>
   </node>
-  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1623150748"/>
+  <node name="Module 15: SQL Injection" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621940388" ts_lastsave="1624170669">
+    <rich_text foreground="#569cd6" weight="heavy"># Terminology</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">The intention of SQL injection is to reveal or manipulate sensitive information from the database by injecting commands into existing queries.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Bypassing authentication</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Revealing sensitive information</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Compromise data integrity</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Erase database</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Tools</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> sqlmap</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># SQL</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**SQL**</rich_text>
+    <rich_text foreground="#d4d4d4"> stands for </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**S**</rich_text>
+    <rich_text foreground="#d4d4d4">tructured </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**Q**</rich_text>
+    <rich_text foreground="#d4d4d4">uery </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**L**</rich_text>
+    <rich_text foreground="#d4d4d4">anguage.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Types of SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">  # **In-Band SQL Injection**</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">    Use the same communication channel to launch the attack and get the result.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">  # **Error Based SQL Injection**</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">    - Server throw an error message</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">    - Error message is useful during the development, but should be disabled it when the application is live</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Techniques to perform SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> End of line comment - Comment out the Rest Query by using Comment Techniques.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Illegal / Logically incorrect query - Send an incorrect</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Tautology (something that is inherently true, like " OR 1=1")</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Union SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  Involves the </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**UNION**</rich_text>
+    <rich_text foreground="#d4d4d4"> SQL operator, to combine the queries.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">    </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**Select the </rich_text>
+    <rich_text foreground="#ce9178" weight="heavy">`password`</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"> from </rich_text>
+    <rich_text foreground="#ce9178" weight="heavy">`table1`</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"> and </rich_text>
+    <rich_text foreground="#ce9178" weight="heavy">`table2`</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"> using UNION:**</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#d4d4d4">                  SELECT password FROM table1</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">                              UNION</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">                  SELECT password FROM table2</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Inferential SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Known as </rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">**Blind SQL Injection**</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  </rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> No data is transferred from the via the application, the attacker sending payloads, then observe the web application's response and behavior.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Boolean-based Blind SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  Sending an SQL query to the database which send a different result depending on whether the query returns TRUE</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  or FALSE result, the HTTP response will change or remain the same.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#d4d4d4">  This type of attack is slow, attacker need to enumerate the database, character by character.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Time-based Blind SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  Attacker send a query, force the database to wait for a specified time before respond.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  The respond time indicate that the query TRUE or FALSE.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Out-of-band SQL Injection</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#d4d4d4">  Depends on the features allowed on the database server (DNS, HTTP request), so not a very common attack.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#d4d4d4">  Use different channel to launch the attack.</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># SQL Injection Methodology</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy"># Information Gathering And Vulnerability Detection</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Collect the information about the web application, server, OS, database, ...</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Identify vulnerabilities</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Evaluate input fields</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">### Launch Attack</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Select the appropriate type of SQL Injection, based on the gathered information</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">## Advanced SQL Injection</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Enumerate the database (Postgre, MySQL, Oracle, ...)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Identify privilege level of users</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Passwords and hashes grabbing</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Transfer database to a remote machine</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">## Evasion Techniques</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">### Evading IDS</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Inserting inline comment in between keywords</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Character encoding</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> String Concatenation</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Obfuscated codes</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Manipulating white spaces</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Hex encoding</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Sophisticated matches</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#569cd6" weight="heavy">## Countermeasures</rich_text>
+    <rich_text>
+
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Penetration testing (manual, with tool)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Source code analysis</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Wep Application Firewall (WAF)</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Remove debugging messages</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Database account with minimal privileges</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Input validation</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Filter data</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> Customize error messages</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text foreground="#6796e6">-</rich_text>
+    <rich_text foreground="#d4d4d4"> IDS</rich_text>
+    <rich_text>
+
+
+</rich_text>
+  </node>
   <node name="Module 16: Hacking Wireless Networks" unique_id="46" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1623150748" ts_lastsave="1623326421">
     <rich_text>A wireless network refers to any type of computer network that is wireless and is commonly associated with a telecommunications network whose interconnections between nodes are implemented without the use of wires. Wireless telecommunications networks are generally implemented with some type of remote information transmission system that uses electromagnetic waves such as radio waves for the carrier. The implementation usually takes place at the physical level or layer of the network.
 =====================================================================
@@ -1147,7 +1444,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624168751">
+  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624170502">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -1464,6 +1761,7 @@ Link for payloads : </rich_text>
 → 
 </rich_text>
     </node>
+    <node name="XXE || injection" unique_id="64" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624170502" ts_lastsave="1624170502"/>
   </node>
   <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624170083">
     <rich_text>1. </rich_text>

@@ -1465,7 +1465,7 @@ Link for payloads : </rich_text>
 </rich_text>
     </node>
   </node>
-  <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624169995">
+  <node name="2FA bypass" unique_id="63" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624168775" ts_lastsave="1624170061">
     <rich_text>1. </rich_text>
     <rich_text background="#ffff00000000" weight="heavy">Response Manipulation</rich_text>
     <rich_text weight="heavy"> :</rich_text>
@@ -1475,27 +1475,45 @@ Link for payloads : </rich_text>
     <rich_text foreground="#0000ffff0000"> “sucess” : true</rich_text>
     <rich_text>
 
-2. Status code Manipulation : If status code is </rich_text>
+2. </rich_text>
+    <rich_text background="#ffff00000000">Status code Manipulation :</rich_text>
+    <rich_text> If status code is </rich_text>
     <rich_text foreground="#0000ffff0000">4xx</rich_text>
     <rich_text> try to change it to </rich_text>
     <rich_text foreground="#0000ffff0000">200 o</rich_text>
     <rich_text>k and see the bypass restriction. 
 
-3. 2FA Code Manipulation : Check the response of the 2FA code Trigger Request to see if it bypass restriction
+3. </rich_text>
+    <rich_text background="#ffff00000000">2FA Code Manipulation :</rich_text>
+    <rich_text> Check the response of the 2FA code Trigger Request to see if it bypass restriction
 
-4. JS File Analysis : Rare but some JS File may contain information about the 2FA code.
+4. </rich_text>
+    <rich_text background="#ffff00000000">JS File Analysis :</rich_text>
+    <rich_text> Rare but some JS File may contain information about the 2FA code.
 
-5. 2FA Code Reusablity : Some code can be reused.
+5. </rich_text>
+    <rich_text background="#ffff00000000">2FA Code Reusablity :</rich_text>
+    <rich_text> Some code can be reused.
 
-6. Lack of Brute-force Protection : Possible to brute-force any length 2FA code.  
+6. </rich_text>
+    <rich_text background="#ffff00000000">Lack of Brute-force Protection :</rich_text>
+    <rich_text> Possible to brute-force any length 2FA code.  
 
-7. Missing 2FA Code Integrity Validation : 2FA code of user account can be used to bypass the victime 2FA. 
+7. </rich_text>
+    <rich_text background="#ffff00000000">Missing 2FA Code Integrity Validation :</rich_text>
+    <rich_text> 2FA code of user account can be used to bypass the victime 2FA. 
 
-8. CSRF on 2FA Code Integrity Validation : No CSRF Protection on disabling 2FA, also there is no auth confirm
+8. </rich_text>
+    <rich_text background="#ffff00000000">CSRF on 2FA Code Integrity Validation :</rich_text>
+    <rich_text> No CSRF Protection on disabling 2FA, also there is no auth confirm
 
-9. Password Reset Disable 2FA : 2FA gets disable when changing the EMAIL/Password
+9. </rich_text>
+    <rich_text background="#ffff00000000" weight="heavy">Password Reset Disable 2FA :</rich_text>
+    <rich_text> 2FA gets disable when changing the EMAIL/Password
 
-10. Bypass 2FA with Null or 000000 : Enter the code 0000 or null to bypass the 2FA protection.
+10. </rich_text>
+    <rich_text background="#ffff00000000">Bypass 2FA with Null or 000000 :</rich_text>
+    <rich_text> Enter the code 0000 or null to bypass the 2FA protection.
 ----------------------------------------------------------------------------------------------------------------------------------  </rich_text>
   </node>
   <node name="[FILTER]:CROSS SITE SCRIPTING" unique_id="27" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1622293290" ts_lastsave="1622894939">
