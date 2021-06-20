@@ -1444,7 +1444,7 @@ OR:
 • Cryptography - study of encryption principles/methods</rich_text>
     </node>
   </node>
-  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624192570">
+  <node name="Bugs (EXPLAINATION) OWASP10" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1621941520" ts_lastsave="1624205438">
     <rich_text link="webs https://owasp.org/www-project-top-ten/">https://owasp.org/www-project-top-ten/</rich_text>
     <rich_text>
 ==============================================================
@@ -1977,6 +1977,102 @@ XMLHttpRequest.open()
 XMLHttpRequest.send()</rich_text>
       <rich_text>
 
+</rich_text>
+    </node>
+    <node name="Local File Inclusion (LFI)" unique_id="67" prog_lang="custom-colors" tags="" readonly="0" custom_icon_id="0" is_bold="1" foreground="" ts_creation="1624205438" ts_lastsave="1624208263">
+      <rich_text>→ </rich_text>
+      <rich_text weight="heavy">Local file inclusion</rich_text>
+      <rich_text> (also known as </rich_text>
+      <rich_text weight="heavy">LFI</rich_text>
+      <rich_text>) is the process of including </rich_text>
+      <rich_text weight="heavy">files</rich_text>
+      <rich_text>, that are already </rich_text>
+      <rich_text weight="heavy">locally</rich_text>
+      <rich_text> present on the server, through the exploiting of vulnerable </rich_text>
+      <rich_text weight="heavy">inclusion</rich_text>
+      <rich_text> procedures implemented in the application.
+→ This vulnerablity arises when the user input is being include a file from the server without proper validation.
+  Example : </rich_text>
+      <rich_text link="webs http://www.google.com/index.php/page=contact.php">www.google.com/index.php/page=contact.php</rich_text>
+      <rich_text> → LFI vulnerablity, we can call the file that exists in the server. →  </rich_text>
+      <rich_text link="webs http://www.google.com/index.php/page=/etc/passwd">www.google.com/index.php/page=/etc/passwd</rich_text>
+      <rich_text>
+  
+→ Dont forget to go back directories, with </rich_text>
+      <rich_text foreground="#0000ffff0000">../</rich_text>
+      <rich_text>  
+
+→ Payload : </rich_text>
+      <rich_text link="webs https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt">https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt</rich_text>
+      <rich_text>
+-----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Impact of LFI :</rich_text>
+      <rich_text> 
+1. Informational Disclouser
+2. Cross-site scripting 
+3. Remote Code Execution
+4. Source code
+5. Backend file
+6. Log file
+---------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Code that causes LFI :</rich_text>
+      <rich_text> 
+
+Always check source of with the keywords with : 
+→ include()
+→ include_once()
+→ require()
+→ require_once()
+→ fopen()
+-----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000">#Source-code after exploiting LFI</rich_text>
+      <rich_text> 
+
+1. php://filter/resource=/path/to/file.php 
+   Example : </rich_text>
+      <rich_text foreground="#0000ffff0000">php://filter/resource=home.php</rich_text>
+      <rich_text> 
+
+2. Converting into base64 so that it wont create a problem.
+→  </rich_text>
+      <rich_text foreground="#0000ffff0000">php://filter/convert.base64-encode/resource=home.php</rich_text>
+      <rich_text> after getting code decode the code into plain text
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+</rich_text>
+      <rich_text background="#ffff00000000"># Possible parameter: </rich_text>
+      <rich_text>
+</rich_text>
+      <rich_text foreground="#0000ffff0000">?cat={payload}
+?dir={payload}
+?action={payload}
+?board={payload}
+?date={payload}
+?detail={payload}
+?file={payload}
+?download={payload}
+?path={payload}
+?folder={payload}
+?prefix={payload}
+?include={payload}
+?page={payload}
+?inc={payload}
+?locate={payload}
+?show={payload}
+?doc={payload}
+?site={payload}
+?type={payload}
+?view={payload}
+?content={payload}
+?document={payload}
+?layout={payload}
+?mod={payload}
+?conf={payload}</rich_text>
+      <rich_text>
 </rich_text>
     </node>
   </node>
